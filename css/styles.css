@@ -1,36 +1,38 @@
 body {
-  background-image:image("img1.jpg");
+  background-image: url("https://www.website.com/images/image_background.jpg");
+ background-repeat:no-repeat;
+ background-size:cover;
   background-color: #E4AEC5;
   color: #071E3D;
-  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-family: Parkavenue, cursive;
   font-size: 15px;
   font-weight: bold;
 }
 h1 {
   color: #4C0027;
-  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-family: Parkavenue, cursive;
   font-size: 50px;
 }
 h2 {
   color: #151515;
-  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-family: Parkavenue, cursive;
   font-size: 40px;
 }
 h3 {
   color: #1E5128;
-  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-family: Parkavenue, cursive;
   font-size: 30px;
 }
 h4 {
   color: #270082;
-  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-family: Parkavenue, cursive;
   font-size: 20px;
 }
 table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
   padding: 5px;
-  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-family: Parkavenue, cursive;
   font-size: 10px;
 }
 p {
