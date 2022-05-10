@@ -1,4 +1,6 @@
 body {
+  background-image:url("img1.jpg");
+  background-image: image("img1.jpg");
   background-color: #E900FF;
   color: #071E3D;
   font-family: Comic Sans, Comic Sans MS, cursive;
