@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dict</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1 style="padding-left: 500px;">DICTIONARY</h1>
+    <h2>Introduction</h2>
+    <ul>
+      <li>multiple pair of key&value, key & value sepeated by coloumn, enclosed with curly brasis,
+        seperated by comma called Dictionary , ex: a={"name":"vijay", "age":32}</li>
+      <li>Its not ann array, can perform different types</li>
+      <li>Slicing can perform</li>
+      <li>ImMutable</li>
+      <h4>Find data type</h4>
+      <p>a=["dhoni",7], will find data type by follwing code</p>
+      <table>
+        <tr>
+          <td>Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td>a={"name":"dhoni","age":32}<br>
+              print(a)<br>
+              print(type(a))
+          </td>
+          <td>{'name': 'dhoni', 'age': 32}
+            <br>
+              class 'dict'
+          </td>
+        </tr>
+      </table>
+      <h4>Slicing</h4>
+           <p>Extracting of a particular word or porting in a string</p>
+           <p>Can perform in 6 ways</p>
+           <ol>
+             <li>using index   </li>
+             <li>Using Negative Value </li>
+             <li>Using index & Value </li>
+             <li>Using Negative Value & Negative Value </li>
+             <li>Using index & Negative Value </li>
+             <li>Using Negative Value & index </li>
+           </ol>
+           <table>
+             <tr>
+               <td>Input</td>
+               <td>Output</td>
+             </tr>
+             <tr>
+               <td>a={"name":"vijay", "age":10} <br>
+                  print(a["name"][2]) <br>
+                  print(a["name"][-3]) <br>
+                  print(a["name"][2:3]) <br>
+                  print(a["name"][-3:-2]) <br>
+                  print(a["name"][2:-2]) <br>
+                  print(a["name"][-3:3]) <br>
+               </td>
+               <td>
+                 j <br>
+                 j <br>
+                 j <br>
+                 j <br>
+                 j <br>
+                 j <br>
+               </td>
+             </tr>
+           </table>
+        <h4>Importan Keys</h4>
+           <ul>
+             <li>print(var.keys), print key only from dictionar</li>
+             <li>print(var.values), print value only from dictionar</li>
+             <li>print(var.items), print all items from dictionar</li>
+             <li>var.pop(), remove an element with valid key</li>
+             <li>var.clear(), make empty dicitionay</li>
+             <li>print(var.keys()), find key availability in a dictionary without get error</li>
+             <li>print(len(var)), check length of dictinary</li>
+           </ul>
+  </body>
+</html>

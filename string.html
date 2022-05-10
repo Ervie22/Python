@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>String</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1 style="padding-left: 500px;">STRING</h1>
+    <h2>Introduction</h2>
+    <ul>
+      <li>Any elements enclosed with quotes called string, ex: a="vijay"</li>
+      <li>Its not ann array, can perform different types</li>
+      <li>Slicing can perform</li>
+      <li>Mutable</li>
+    </ul>
+    <h4>Find data type</h4>
+    <p>a="vijay", will find data type by follwing code</p>
+    <table>
+      <tr>
+        <td>Input</td>
+        <td>Output</td>
+      </tr>
+      <tr>
+        <td>a="dhoni"<br>
+            print(a)<br>
+            print(type(a))
+        </td>
+        <td>dhoni
+          <br>
+            class 'str'
+        </td>
+      </tr>
+    </table>
+    <h4>Type casting</h4>
+        <p>Two Types</p>
+        <ul>
+          <li><h5>Implicit</h5></li>
+          <li>which data type can automatically changed to priority data type</li>
+          <li>
+            <table>
+              <tr>
+                <td>Input</td>
+                <td>Output</td>
+              </tr>
+              <tr>
+                <td>a=10<br>
+                    b=10.5 <br>
+                    print(a+b)
+                    print(type(a+b))
+                </td>
+                <td>20.5
+                  <br>
+                    class 'Float'
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <ul>
+          <li><h5>Explicit</h5></li>
+          <li>which data type can change by external command without affect main memory</li>
+          <li>
+            <table>
+              <tr>
+                <td>Input</td>
+                <td>Output</td>
+              </tr>
+              <tr>
+                <td>a="dhoni"<br>
+                    b=7 <br>
+                    print(a+str(b))
+                    print(type(a+b))
+                </td>
+                <td>dhoni 7
+                  <br>
+                    class 'string'
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <h4>3 Different Print statments</h4>
+        <p>find the example to get output by 3 different statments</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>var="india"
+                var1=300 <br>
+                var2="srilanka" <br>
+                var3=50 <br>
+                print(var, "scored", var1,"runs against", var2, "in", var3, "overs") <br>
+                print("%s scored %d runs against %s in %d overs"%(var,var1,var2,var3)) <br>
+                print("{} scored {} runs against {} in {} overs".format(var,var1,var2,var3)) <br>
+            </td>
+            <td>
+              india scored 300 runs against srilanka in 50 overs <br>
+              india scored 300 runs against srilanka in 50 overs <br>
+              india scored 300 runs against srilanka in 50 overs <br>
+            </td>
+          </tr>
+        </table>
+        <h4>Slicing</h4>
+             <p>Extracting of a particular word or porting in a string</p>
+             <p>Can perform in 6 ways</p>
+             <ol>
+               <li>using index (if a="vijay",  v starts from 0, in value V starts from 1)slice j (a[2])</li>
+               <li>Using Negative Value (if a="vijay",  y starts from -1)(a[-3])</li>
+               <li>Using index & Value (a[2:3])</li>
+               <li>Using Negative Value & Negative Value (a[-3:-2])</li>
+               <li>Using index & Negative Value (a[2:-2])</li>
+               <li>Using Negative Value & index (a[-3:3])</li>
+             </ol>
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td>a="vijay" <br>
+                    print(a[2]) <br>
+                    print(a[-3]) <br>
+                    print(a[2:3]) <br>
+                    print(a[-3:-2]) <br>
+                    print(a[2:-2]) <br>
+                    print(a[-3:3]) <br>
+                 </td>
+                 <td>
+                   j <br>
+                   j <br>
+                   j <br>
+                   j <br>
+                   j <br>
+                   j <br>
+                 </td>
+               </tr>
+             </table>
+             <h4>Important keys</h4>
+             <ul>
+               <li>Var.Count()  Used to count particular word or portin in a full string or required portion in a string</li>
+               <li>Var.index()  Used to find particular word or portin in a full string or required portion in a string <br>
+                   if required data not available, it will show error
+              </li>
+              <li>Var.find()  Used to find particular word or portin in a full string or required portion in a string <br>
+                   if required data not available, it will show -1
+              </li>
+              <li>Var.split()   Used to split by given input, before & after</li>
+              <li>Var.split()  Used to make parition by given input, before & after </li>
+              <li>var.strip() used to remove strip from  last or first</li>
+              <li>var.upper() used to make all elements in upper case in string</li>
+              <li>var.lower() used to make all elements in lower case in string</li>
+              <li>var.title() used to make all elements first letter in upper case in string</li>
+              <li>var.capitilize() used to make first letter in upper case in string</li>
+              <li>var.isupper() used to check all elements in upper case in string</li>
+              <li>var.islower() used to check all elements in lower case in string</li>
+              <li>var.istitle() used to check all elements first letter in upper case in string</li>
+              <li>var.startswith() used to check wether string start with given input in string</li>
+              <li>var.endswith() used to check wether string end with given input in string</li>
+              <li>("" in var) used to check wether string available with given input in string</li>
+              <li>var.replace("","") used to replace the particular string in copy of memory</li>
+
+
+
+             </ul>
+
+
+  </body>
+</html>
