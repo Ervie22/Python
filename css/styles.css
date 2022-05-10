@@ -1,15 +1,38 @@
 body {
   background-color: #E900FF;
+  color: #071E3D;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 15px;
+  font-weight: bold;
 }
 h1 {
   color: #4C0027;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
 }
 h2 {
   color: #151515;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
 }
 h3 {
   color: #1E5128;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
 }
 h4 {
   color: #270082;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+p {
+  font-size: 15px;
+
 }
