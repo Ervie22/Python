@@ -3,35 +3,35 @@ body {
   background-size: cover;
   background-color: #E4AEC5;
   color: #071E3D;
-  font-family: Parkavenue, cursive;
+  font-family: New Century Schoolbook, serif;
   font-size: 15px;
   font-weight: bold;
 }
 h1 {
   color: #4C0027;
-  font-family: Parkavenue, cursive;
+  font-family: New Century Schoolbook, serif;
   font-size: 50px;
 }
 h2 {
   color: #151515;
-  font-family: Parkavenue, cursive;
+  font-family: New Century Schoolbook, serif;
   font-size: 40px;
 }
 h3 {
   color: #1E5128;
-  font-family: Parkavenue, cursive;
+  font-family: New Century Schoolbook, serif;
   font-size: 30px;
 }
 h4 {
   color: #270082;
-  font-family: Parkavenue, cursive;
+  font-family: New Century Schoolbook, serif;
   font-size: 20px;
 }
 table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
   padding: 5px;
-  font-family: Parkavenue, cursive;
+  font-family: New Century Schoolbook, serif;
   font-size: 10px;
 }
 p {
