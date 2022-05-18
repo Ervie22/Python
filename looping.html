@@ -169,7 +169,96 @@
                </td>
              </tr>
            </table>
+           <h4>ELIF</h4>
+              <p>ElIF Condition Used to   satisfy more command in string or list as per requirement</p>
+              <table>
+                <tr>
+                  <td>Input</td>
+                  <td>Output</td>
+                </tr>
+                <tr>
+                  <td><br>
+                      var="india" <br>
+                      for x in var:<br>
+                         if (x=="i"): <br>
+                           print("available") <br>
+                           elif(x=="d") <br>
+                           print("present")
+                           else: <br>
+                            print("not available")
 
+                  </td>
+                  <td>available <br>
+                    not available <br>
+                    present<br>
+                    available <br>
+                    not available
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td>Input</td>
+                  <td>Output</td>
+                </tr>
+                <tr>
+                  <td><br>
+                      var=["dhoni","yuvi","dhoni","jadeja"] <br>
+                      for x in var:<br>
+                      if (x=="dhoni"): <br>
+                      print("present") <br>
+                      elif(x=="yuvi") <br>
+                      print("available")
+                      else: <br>
+                       print("not present")
 
+                  </td>
+                  <td>present <br>
+                    available <br>
+                    present <br>
+                    not present
+                  </td>
+                </tr>
+              </table>
+              <h4>ENUMERATE</h4>
+                 <p>enumerate Condition Used to   print odd, even & n values in string or list as per requirement</p>
+                 <table>
+                   <tr>
+                     <td>EVEN Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td><br>
+                         var="india" <br>
+                         for x,y in enumerate(var):<br>
+                            print(x%2==0): <br>
+                              print(y)
+
+                     </td>
+                     <td>i <br>
+                       d <br>
+                       a
+                     </td>
+                   </tr>
+                 </table>
+                 <table>
+                   <tr>
+                     <td>ODD Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td><br>
+                         var="india" <br>
+                         for x,y in enumerate(var):<br>
+                            print(x%2!=0): <br>
+                              print(y)
+
+                     </td>
+                     <td>n <br>
+                       i
+                     </td>
+                   </tr>
+                 </table>
+                
   </body>
 </html>
