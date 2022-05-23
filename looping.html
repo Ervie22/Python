@@ -259,6 +259,204 @@
                      </td>
                    </tr>
                  </table>
-                
+                 <p>Remove Duplicates  in string using for & if</p>
+                 <table>
+                   <tr>
+                     <td> Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td>var="aaazzaabbcceecccdd" <br>
+                         new="" <br>
+                         for x in  var: <br>
+                         if x not in new: <br>
+                          new=new + x <br>
+                          print(new)
+
+                     </td>
+                     <td>azbced                       i
+                     </td>
+                   </tr>
+                 </table>
+                 <table>
+                   <tr>
+                     <td> Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td>var="aaazzaabbcceecccdd" <br>
+                         new="" <br>
+                         for x in  var: <br>
+                         if x  in new: <br>
+                         pass <br>
+                         else: <br>
+                          new=new + x <br>
+                          print(new)
+
+                     </td>
+                     <td>azbced
+                     </td>
+                   </tr>
+                 </table>
+                 <p>Find greatest number in list</p>
+                 <table>
+                   <tr>
+                     <td> Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=[10, 7, 2, 3, 12, 1] <br>
+                        print(max(var)
+                     </td>
+                     <td> 12
+                     </td>
+                   </tr>
+                 </table>
+                 <p>Print Even numbers in list</p>
+                 <table>
+                   <tr>
+                     <td> Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=[10, 7, 2, 3, 12, 1] <br>
+                          a=[] <br>
+                          for x in var: <br>
+                              if(x%2==0): <br>
+                                  a.append(x) <br>
+                          print(a)
+                     </td>
+                     <td> [10, 2, 12]
+                     </td>
+                   </tr>
+                 </table>
+                 <p>Print Even & Odd numbers in list</p>
+                 <table>
+                   <tr>
+                     <td> Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=[10, 7, 2, 3, 12, 1] <br>
+                          a=[] <br>
+                          b=[] <br>
+                          for x in var: <br>
+                              if(x%2==0): <br>
+                                  a.append(x) <br>
+                              else: <br>
+                                  b.append(x) <br>
+                          print(a) <br>
+                          print(b)
+                     </td>
+                     <td> [10, 2, 12] <br>
+                          [7,3,1]
+                     </td>
+                   </tr>
+                 </table>
+                 <p>Print sum of values in list</p>
+                 <table>
+                   <tr>
+                     <td> Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=[10, 7, 2, 3, 12, 1] <br>
+                          a=0 <br>
+                          for x in var: <br>
+                              a=a+x <br>
+                          print(b)
+                     </td>
+                     <td> 35
+
+                     </td>
+                   </tr>
+                 </table>
+          <h4>WHILE</h4>
+          <p>While is used where we cant abble to use IF</p>
+          <p>We can use it for finite limits</p>
+          <p></p>
+          <p>Print list of values using while</p>
+          <table>
+            <tr>
+              <td> Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td> a=0 <br>
+                   while(a<0) <br>
+                       a=a+2 <br>
+                   print(a)
+              </td>
+              <td> 2 <br>
+                4 <br>
+                6 <br>
+                8
+              </td>
+            </tr>
+          </table>
+          <p>Print sum of integers using while</p>
+          <table>
+            <tr>
+              <td> Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td> var=586 <br>
+                   a=0 <br>
+                   while(a>0) <br>
+                       dig=var%10 <br>
+                       a=a*10+dig <br>
+                       var=var//10 <br>
+                   print(a)
+              </td>
+              <td> 19
+              </td>
+            </tr>
+          </table>
+          <p>Print reverse of integers using while</p>
+          <table>
+            <tr>
+              <td> Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td> var=586 <br>
+                   a=0 <br>
+                   while(a>0) <br>
+                       dig=var%10 <br>
+                       a=a+dig <br>
+                       var=var//10 <br>
+                   print(a)
+              </td>
+              <td> 685
+              </td>
+            </tr>
+          </table>
+      <h4>Continue</h4>
+      <p>Continue used to run last command in program</p>
+      <p>For the below example, first given command, if d available, it will print. <br>
+        if we use continue command, it will print except d
+      </p>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> var="india" <br>
+               for x in var: <br>
+                   if(x=="d"):<br>
+                   continue <br>
+               print(x)
+          </td>
+          <td> i <br>
+               n <br>
+               i <br>
+               a
+          </td>
+        </tr>
+      </table>
+
+
   </body>
 </html>
