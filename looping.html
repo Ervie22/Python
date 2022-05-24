@@ -456,6 +456,129 @@
           </td>
         </tr>
       </table>
+     <h4>Range & Dynamic inputs</h4>
+      <p>Range used to Set particular limits</p>
+      <p>Dynamic inputs used to get multiple inputs from user</p>
+      <p>Some basic Examples for Range</p>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> for x in range(4): <br>
+                print(x)
+          </td>
+          <td> 0 <br>
+               1 <br>
+               2 <br>
+               3
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> for x in range(0,3): <br>
+                print(x)
+          </td>
+          <td> 0 <br>
+               1 <br>
+               2 <br>
+               3
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> for x in range(1,3): <br>
+                print(x)
+          </td>
+          <td> 1 <br>
+               2 <br>
+               3
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> for x in range(0,5,2): <br>
+                print(x)
+          </td>
+          <td> 0 <br>
+               2 <br>
+               4
+          </td>
+        </tr>
+      </table>
+      <p>Basic Examples for Dynami Input</p>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> b=input("Enter Your Name: ") <br>
+                print(b) <br>
+                print(type(b))
+          </td>
+          <td> Enter Your Name: Vijay <br>
+               Vijay <br>
+                class 'str'
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> b=int(input("Enter Your age: ")) <br>
+                print(b) <br>
+                print(type(b))
+          </td>
+          <td> Enter Your age: 32 <br>
+               32 <br>
+                class 'int'
+          </td>
+        </tr>
+      </table>
+      <p>EX:1 How to calculate Average from n no of subjects</p>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> a=int(input("Enter no of sunjects: ")) <br>
+                b=[] <br>
+                for x in range(a): <br>
+                c=int(input("Enter Your Marks: ")) <br>
+                b.append(c) <br>
+                tot=sum(b) <br>
+                avg=tot/a <br>
+                print(avg)
+          </td>
+          <td> Enter no of sunjects: 3 <br>
+            Enter your marks: 40 <br>
+             Enter your marks: 50 <br>
+              Enter your marks: 60 <br>
+                50.0
+          </td>
+        </tr>
+      </table>
 
 
   </body>
