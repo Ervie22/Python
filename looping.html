@@ -579,6 +579,62 @@
           </td>
         </tr>
       </table>
+      <p>EX:2 How to check given no is even or odd</p>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> def check(n) <br>
+                if (n<0): <br>
+                return(n % 2 == 0) <br>
+                return(Check(n-2))
+                n=int(input("Enter Your No: ")) <br>
+                if(check(n)==True): <br>
+                print("given no is even") <br>
+                else: <br>
+                print("given no is odd")
+          </td>
+          <td> Enter Your No: 3 <br>
+            Given no  is odd
+
+          </td>
+        </tr>
+      </table>
+      <p>EX:3 Python Program to Accept Three Digits and Print all Possible Combinations from the Digits</p>
+      <table>
+        <tr>
+          <td> Input</td>
+          <td>Output</td>
+        </tr>
+        <tr>
+          <td> a=int(input("Enter first number:")) <br>
+                b=int(input("Enter second number:")) <br>
+                c=int(input("Enter third number:")) <br>
+                d=[] <br>
+                d.append(a) <br>
+                d.append(b) <br>
+                d.append(c) <br>
+                for i in range(0,3): <br>
+                for j in range(0,3):<br>
+                for k in range(0,3): <br>
+                if(i!=j&j!=k&k!=i): <br>
+                print(d[i],d[j],d[k])
+          </td>
+          <td> Enter first number:5 <br>
+               Enter first number:6 <br>
+               Enter first number:7 <br>
+               5 6 7 <br>
+               5 7 6 <br>
+               6 5 7 <br>
+               6 7 5 <br>
+               7 5 6 <br>
+               7 6 5
+
+          </td>
+        </tr>
+      </table>
 
 
   </body>
