@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Network Programming</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body background="img1.jpg">
+    <h1 style="padding-left: 500px;">Network Programming</h1>
+  <table>
+    <tr>
+      <td>Client</td>
+      <td>Server</td>
+    </tr>
+    <tr>
+      <td> import socket <br>
+        def client_program(): <br>
+        host=socket.gethostname() <br>
+        port=8000 <br>
+        client_socket=socket.socket() <br>
+        client_socket.connect((host,port)) <br>
+        message=input("Enter Your Message: ") <br>
+        while(message.lower.strip!="bye"): <br>
+        client_socket.send(message.encode()) <br>
+        data=client_socket.recv(1024).decode() <br>
+        print(data) <br>
+        message=input("Enter Your Message: ") <br>
+        client_socket.close() <br>
+        if __name__=="__main__": <br>
+        client_program()
+      </td>
+      <td>import socket <br>
+      def server_program(): <br>
+      host=socket.gethostname() <br>
+      port=8000 <br>
+      server_socket=socket.socket() <br>
+      server_socket.bind((host,port)) <br>
+      server_socket.listen(2) <br>
+       connection,address=server_socket.accept() <br>
+        while True: <br>
+         data=connection_recv(1024).decode() <br>
+         if not data: <br>
+         break <br>
+         print(data) <br>
+         message=input("Enter Your Message: ") <br>
+         connection.send(message.encode()) <br>
+         conncetion.close() <br>
+         if __name__=="__main__": <br>
+         server_program()
+    </td>
+
+    </tr>
+  </table>
+
+
+  </body>
+</html>

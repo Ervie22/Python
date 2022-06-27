@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lambda function</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body background="img1.jpg">
+    <h1 style="padding-left: 500px;">Comprehension</h1>
+    <h2>Introduction</h2>
+    <p>it is an anonymus funtion, it is used to imitate the function</p>
+    <p>Ex:1 Basic Print statement</p>
+    <table>
+      <tr>
+        <td>Traditional</td>
+        <td>Comprehension</td>
+        <td>output</td>
+      </tr>
+      <tr>
+        <td>def fun(a): <br>
+          print(a)  <br>
+          fun(10)
+        </td>
+        <td> def fun(a): <br>
+          print(a)  <br>
+          fun(10) <br>
+          var=lambda a:a <br>
+          print(var(10))
+        </td>
+        <td>10</td>
+      </tr>
+    </table>
+    <p>Ex:2 2 argument</p>
+    <table>
+      <tr>
+        <td>Traditional</td>
+        <td>Comprehension</td>
+        <td>output</td>
+      </tr>
+      <tr>
+        <td>def fun(a,b): <br>
+          print(a*b)  <br>
+          fun(10,2)
+        </td>
+        <td> def fun(a): <br>
+          print(a)  <br>
+          fun(10) <br>
+          var=lambda a,b:a*b<br>
+          print(var(10,2))
+        </td>
+        <td>20</td>
+      </tr>
+    </table>
+      <p>Ex:3 square the element valus in list(Map)</p>
+    <table>
+      <tr>
+        <td>Traditional</td>
+        <td>Comprehension</td>
+        <td>output</td>
+      </tr>
+      <tr>
+        <td>var=[10,7,2,4,5] <br>
+          a=[] <br>
+          for x in var: <br>
+          a.append(x**2) <br>
+          print(a)
+        </td>
+        <td> var=[10,7,2,4,5] <br>
+           z=list(map(lambda x:x**2, var ))<br>
+          print(z)
+        </td>
+        <td>[100,49,4,16,25]</td>
+      </tr>
+    </table>
+    <p>Ex:4 Find Even Numbers(Filter)</p>
+    <table>
+      <tr>
+        <td>Traditional</td>
+        <td>Comprehension</td>
+        <td>Output</td>
+      </tr>
+      <tr>
+        <td> var=[10,7,2,3,4] <br>
+          a=[]
+        for x in var: <br>
+        if(x%2==0) <br>
+        a.append(x) <br>
+        print(a)
+        </td>
+        <td>var=[10,7,2,3,4] <br>
+          z=list(filter(lambda x:x%2==0, var))
+        print(z)
+        </td>
+        <td>[10,2,4]</td>
+      </tr>
+    </table>
+    <p>Ex:5 add with elements</p>
+    <table>
+      <tr>
+        <td>Traditional</td>
+        <td>Comprehension</td>
+        <td>output</td>
+      </tr>
+      <tr>
+        <td>var=[10,7,2,4,5] <br>
+          a=[] <br>
+          for x in var: <br>
+          a.append(x+2) <br>
+          print(a)
+        </td>
+        <td> var=[10,7,2,4,5] <br>
+           z=list(map(lambda x:x+2, var ))<br>
+          print(z)
+        </td>
+        <td>[12,9,4,6,7]</td>
+      </tr>
+    </table>
+    <p>Ex:6 Make Dictionary</p>
+    <table>
+      <tr>
+        <td>Traditional</td>
+        <td>Comprehension</td>
+        <td>Output</td>
+      </tr>
+      <tr>
+        <td>a=[5,10,7,2,8] <br>
+          b=0 <br>
+          for x in a: <br>
+        a=a+x<br>
+        print(b)
+        </td>
+        <td>a=[5,10,7,2,8] <br>
+          from funtiontools import reduce <br>
+          z=reduce(lambda x,y:x+y, var)
+        print(z)
+        </td>
+        <td>32</td>
+      </tr>
+    </table>
+  
+  </body>
+</html>
