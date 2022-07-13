@@ -141,8 +141,34 @@
              <h4>Important keys</h4>
              <ul>
                <li>Var.Count()  Used to count particular word or portin in a full string or required portion in a string</li>
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var="india is my country" <br>
+                   print(var.count("in")) <br>
+                    print(var.count("in",3))<br>
+                  print(var.count("in",3,20)) </td>
+                  <td>1 <br> 0 <br> 0 </td>
+                 </tr>
+               </table>
                <li>Var.index()  Used to find particular word or portin in a full string or required portion in a string <br>
                    if required data not available, it will show error
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var="india indention india" <br>
+                       print(var.index("in")) <br>
+                        print(var.index("in",3))<br>
+                      print(var.index("in",3,20)) </td>
+                      <td>0 <br> 6 <br> 6 </td>
+                     </tr>
+                   </table>
               </li>
               <li>Var.find()  Used to find particular word or portin in a full string or required portion in a string <br>
                    if required data not available, it will show -1
