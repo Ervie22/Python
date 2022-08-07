@@ -68,16 +68,169 @@
            </table>
       <h4>Important Keys</h4>
          <ul>
-           <li>var.append(), used to add single element in last in list</li>
-           <li>var.extend(), used to add multiple element in last in list</li>
-           <li>var.pop(), if empty remove last element in list, if give an particular index it will remove</li>
-           <li>var.remove(), remove a particular string</li>
-           <li>var.insert(), insert a string in particular index in list</li>
-           <li>var.sort(), sort in  ascending order</li>
-           <li>var.sort(reverse.True), sort in  descending order</li>
-           <li>len(var), to find length of list</li>
-           <li>var.clear(), clear list</li>
-           <li>del(var), delete  main memory</li>
+           <li>var.append(), used to add single element in last in list
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.append("jadeja") <br>
+                     print(var)
+                   </td>
+                <td>['dhoni', 'azar', 'balu', 'kholi', 'jadeja']</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.extend(), used to add multiple element in last in list
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.extend(["jadeja","rahul"]) <br>
+                     print(var)
+                   </td>
+                <td>['dhoni', 'azar', 'balu', 'kholi', 'jadeja', 'rahul']</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.pop(), if empty remove last element in list, if give an particular index it will remove
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.pop() <br>
+                     print(var)
+                   </td>
+                <td>['dhoni', 'azar', 'balu']</td>
+               </tr>
+             </table>
+             <br>
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.pop(2) <br>
+                     print(var)
+                   </td>
+                <td>['dhoni', 'azar', 'kholi']</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.remove(), remove a particular string
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.remove("azhar") <br>
+                     print(var)
+                   </td>
+                <td>['dhoni', 'balu', 'kholi']</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.insert(), insert a string in particular index in list
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.insert(1,"jadeja") <br>
+                     print(var)
+                   </td>
+                <td>['dhoni', 'jadeja', 'azar', 'balu', 'kholi']</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.sort(), sort in  ascending order
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.sort() <br>
+                     print(var)
+                   </td>
+                <td>['azar', 'balu', 'dhoni', 'kholi']</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.sort(reverse.True), sort in  descending order
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.sort(reverse=True) <br>
+                     print(var)
+                   </td>
+                <td>['kholi', 'dhoni', 'balu', 'azar']</td>
+               </tr>
+             </table>
+           </li>
+           <li>len(var), to find length of list
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                                    print(len(var))
+                   </td>
+                <td>4</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.clear(), clear list
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.clear() <br>
+                    print(var)
+                   </td>
+                <td>[]</td>
+               </tr>
+             </table>
+           </li>
+           <li>del(var), delete  main memory
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var=["dhoni","azar","balu","kholi"]<br>
+                   var.delete() <br>
+                    print(var)
+                   </td>
+                <td>NameError: name 'var' is not defined. Did you mean: 'vars'?</td>
+               </tr>
+             </table>
+           </li>
          </ul>
   </body>
 </html>

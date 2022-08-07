@@ -15,7 +15,7 @@
       <li>Slicing can perform</li>
       <li>Mutable</li>
       <h4>Find data type</h4>
-      <p>a=["dhoni",7], will find data type by follwing code</p>
+      <p>a={"name":"vijay", "age":32}, will find data type by follwing code</p>
       <table>
         <tr>
           <td>Input</td>
@@ -69,13 +69,120 @@
            </table>
         <h4>Importan Keys</h4>
            <ul>
-             <li>print(var.keys), print key only from dictionar</li>
-             <li>print(var.values), print value only from dictionar</li>
-             <li>print(var.items), print all items from dictionar</li>
-             <li>var.pop(), remove an element with valid key</li>
-             <li>var.clear(), make empty dicitionay</li>
-             <li>print(var.keys()), find key availability in a dictionary without get error</li>
-             <li>print(len(var)), check length of dictinary</li>
+             <li>print(var.keys), print key only from dictionar
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var={"name":"dhoni", "age":10}<br>
+                     print(var.keys())
+                     </td>
+                  <td>dict_keys(['name', 'age'])</td>
+                 </tr>
+               </table>
+             </li>
+             <li>print(var.values), print value only from dictionar
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var={"name":"dhoni", "age":10}<br>
+                     print(var.values())
+                     </td>
+                  <td>dict_values(['dhoni', 10])</td>
+                 </tr>
+               </table>
+             </li>
+             <li>print(var.items), print all items from dictionar
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var={"name":"dhoni", "age":10}<br>
+                     print(var.items())
+                     </td>
+                  <td>dict_items([('name', 'dhoni'), ('age', 10)])</td>
+                 </tr>
+               </table>
+             </li>
+             <li>var.pop(), remove an element with valid key
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var={"name":"dhoni", "age":10}<br>
+                     var.pop("age") <br>
+                     print(var)
+                     </td>
+                  <td>{'name': 'dhoni'}</td>
+                 </tr>
+               </table>
+             </li>
+             <li>var.clear(), make empty dicitionay
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var={"name":"dhoni", "age":10}<br>
+                     var.clear() <br>
+                     print(var)
+                     </td>
+                  <td>{}</td>
+                 </tr>
+               </table>
+             </li>
+             <li>print(var.keys()), find key availability in a dictionary without get error
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var={"name":"dhoni", "age":10}<br>
+                     print(var["gender"])
+                     </td>
+                  <td>KeyError: 'gender'</td>
+                 </tr>
+               </table>
+               <br>
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var={"name":"dhoni", "age":10}<br>
+                     print(var.get("gender"))
+                     </td>
+                  <td>None</td>
+                 </tr>
+               </table>
+
+             </li>
+             <li>print(len(var)), check length of dictinary
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td> var={"name":"dhoni", "age":10}<br>
+                     print(len(var))
+                     </td>
+                  <td>2</td>
+                 </tr>
+               </table>
+             </li>
            </ul>
   </body>
 </html>

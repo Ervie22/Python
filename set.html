@@ -34,12 +34,95 @@
       </table>
         <h4>Important Keys</h4>
          <ul>
-           <li>var.add(), used to add an  element  in set</li>
-           <li>var.pop(), used to remove an element in set</li>
-           <li>var.remove(), used to remove a particular element in set</li>
-           <li>var.clear(), used to clear set</li>
-           <li>len(var), to find length of set</li>
-           <li>del(var), to delete entire var</li>
+           <li>var.add(), used to add an  element  in set
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                   var.add("sachin") <br>
+                   print(var)
+                   </td>
+                <td>{'azhar', 'sachin', 'dhoni', 7, 10, 'yuvi'}</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.pop(), used to remove an element in set
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                   var.pop() <br>
+                   print(var)
+                   </td>
+                <td>{7, 'azhar', 10, 'yuvi'}</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.remove(), used to remove a particular element in set
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                   var.remove("azhar") <br>
+                   print(var)
+                   </td>
+                <td>{'yuvi', 'dhoni', 7, 10}</td>
+               </tr>
+             </table>
+           </li>
+           <li>var.clear(), used to clear set
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                   var.clear() <br>
+                   print(var)
+                   </td>
+                <td>set()</td>
+               </tr>
+             </table>
+           </li>
+           <li>len(var), to find length of set
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                   print(len(var)))
+                   </td>
+                <td>5</td>
+               </tr>
+             </table>
+           </li>
+           <li>del(var), to delete entire var
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                   del(var) <br>
+                   print(var)
+                   </td>
+                <td>NameError: name 'var' is not defined. Did you mean: 'vars'?</td>
+               </tr>
+             </table>
+           </li>
          </ul>
   </body>
 </html>

@@ -172,21 +172,220 @@
               </li>
               <li>Var.find()  Used to find particular word or portin in a full string or required portion in a string <br>
                    if required data not available, it will show -1
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var="india indention india" <br>
+                       print(var.find("in")) <br>
+                        print(var.find("in",3))<br>
+                      print(var.find("in",8,20)) </td>
+                      <td>0 <br> 6 <br> 16 </td>
+                     </tr>
+                   </table>        </li>
+              <li>Var.split()   Used to split by given input, before & after
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                    print(var.split("my"))
+                      </td>
+                   <td>['india is ', ' counry']</td>
+                  </tr>
+                </table>
               </li>
-              <li>Var.split()   Used to split by given input, before & after</li>
-              <li>Var.parition()  Used to make parition by given input, before & after </li>
-              <li>var.strip() used to remove strip from  last or first</li>
-              <li>var.upper() used to make all elements in upper case in string</li>
-              <li>var.lower() used to make all elements in lower case in string</li>
-              <li>var.title() used to make all elements first letter in upper case in string</li>
-              <li>var.capitilize() used to make first letter in upper case in string</li>
-              <li>var.isupper() used to check all elements in upper case in string</li>
-              <li>var.islower() used to check all elements in lower case in string</li>
-              <li>var.istitle() used to check all elements first letter in upper case in string</li>
-              <li>var.startswith() used to check wether string start with given input in string</li>
-              <li>var.endswith() used to check wether string end with given input in string</li>
-              <li>("" in var) used to check wether string available with given input in string</li>
-              <li>var.replace("","") used to replace the particular string in copy of memory</li>
+
+              <li>Var.parition()  Used to make parition by given input, before & after
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                    print(var.partition("my"))
+                      </td>
+                   <td>('india is ', 'my', ' counry')</td>
+                  </tr>
+                </table>
+               </li>
+              <li>var.strip() used to remove strip from  last or first
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.strip("!")) <br>
+                        print(var.lstrip("!")) <br>
+                        print(var.rstrip("!"))
+                      </td>
+                   <td>india is my country <br>
+                      india is my country! <br>
+                      !india is my counry </td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.upper() used to make all elements in upper case in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.upper())
+                      </td>
+                   <td>INDIA IS MY COUNTRY</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.lower() used to make all elements in lower case in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.lower())
+                      </td>
+                   <td>india is my country</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.title() used to make all elements first letter in upper case in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.title())
+                      </td>
+                   <td>India Is My Country</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.capitilize() used to make first letter in upper case in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.capitalize())
+                      </td>
+                   <td>India is my country</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.isupper() used to check all elements in upper case in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.isupper())
+                      </td>
+                   <td>False</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.islower() used to check all elements in lower case in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.islower())
+                      </td>
+                   <td>True</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.istitle() used to check all elements first letter in upper case in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.istitle())
+                      </td>
+                   <td>False</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.startswith() used to check wether string start with given input in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.startswith("india"))
+                      </td>
+                   <td>True</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.endswith() used to check wether string end with given input in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print(var.endswith("india"))
+                      </td>
+                   <td>False</td>
+                  </tr>
+                </table>
+              </li>
+              <li>("" in var) used to check wether string available with given input in string
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india is my country" <br>
+                        print("is" in var)
+                      </td>
+                   <td>True</td>
+                  </tr>
+                </table>
+              </li>
+              <li>var.replace("","") used to replace the particular string in copy of memory
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td> var="india" <br>
+                        print(var.replace("n", "m"))
+                      </td>
+                   <td>imdia</td>
+                  </tr>
+                </table>
+              </li>
 
 
 
