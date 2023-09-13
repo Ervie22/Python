@@ -1,0 +1,1187 @@
+<tr>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PYTHON TUTORIAL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="card p-5">
+        <div class="card-header">
+          <h1 style="padding-left: 500px;">Python Tutorial</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a  href="index.html" class="btn btn-sm ">Introduction</a>
+              <a   href="datatypes.html" class="btn btn-sm btn-primary">Data Types</a>
+              <a  href="looping.html" class="btn btn-sm">Looping</a>
+              <a  href="function.html" class="btn btn-sm ">Function</a>
+              <a  href="comp.html" class="btn btn-sm">Comprehension</a>
+              <a  href="lambda.html" class="btn btn-sm">Lamda Function</a>
+              <a  href="Net.html" class="btn btn-sm ">Network Program</a>
+              <a  href="execption.html" class="btn btn-sm">Exception Handling</a>
+              <a  href="class.html" class="btn btn-sm">Class</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-5" style="margin-top: 100px;">
+        <div class="card-header text-center">
+          <h4> 3 different Data Types available</h4>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a  onclick="sequential()" class="btn btn-sm " active>Sequential</a>
+              <a   onclick="boolean()" class="btn btn-sm ">Boolean</a>
+              <a  onclick="numeric()" class="btn btn-sm">Numeric</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="card p-5" id="showSequential">
+          <h4>Sequential</h4>
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <a  onclick="string()" class="btn btn-sm ">String</a>
+            <a   onclick="list()" class="btn btn-sm ">List</a>
+            <a  onclick="dict()" class="btn btn-sm ">Dictionary</a>
+            <a  onclick="tuples()" class="btn btn-sm ">Tuples</a>
+            <a  onclick="set()" class="btn btn-sm ">Set</a>
+          </div>
+        </div>
+          <div class="card p-5" id="showBoolean" style="display:none;">
+            <h4>Boolean</h4>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a   class="btn btn-sm ">True</a>
+              <a    class="btn btn-sm ">False</a>
+            </div>
+          </div>
+
+          <div class="card p-5" id="showNumeric" style="display:none;">
+            <h4>Numeric</h4>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a   class="btn btn-sm">Int</a>
+              <a    class="btn btn-sm">Float</a>
+              <a    class="btn btn-sm ">Complex</a>
+            </div>
+          </div>
+
+
+      </div>
+      <div class="card p-5" id="showString" style="display:none;">
+        <h1 style="padding-left: 500px;">STRING</h1>
+        <h2>Introduction</h2>
+        <ul>
+          <li>Any elements enclosed with quotes called string, ex: a="vijay"</li>
+          <li>Its not ann array, can perform different types</li>
+          <li>Slicing can perform</li>
+          <li>ImMutable</li>
+        </ul>
+        <h4>Find data type</h4>
+        <p>a="vijay", will find data type by follwing code</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a="dhoni"<br>
+                print(a)<br>
+                print(type(a))
+            </td>
+            <td>dhoni
+              <br>
+                class 'str'
+            </td>
+          </tr>
+        </table>
+        <h4>Type casting</h4>
+            <p>Two Types</p>
+            <ul>
+              <li><h5>Implicit</h5></li>
+              <li>which data type can automatically changed to priority data type</li>
+              <li>
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td>a=10<br>
+                        b=10.5 <br>
+                        print(a+b)
+                        print(type(a+b))
+                    </td>
+                    <td>20.5
+                      <br>
+                        class 'Float'
+                    </td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+            <ul>
+              <li><h5>Explicit</h5></li>
+              <li>which data type can change by external command without affect main memory</li>
+              <li>
+                <table>
+                  <tr>
+                    <td>Input</td>
+                    <td>Output</td>
+                  </tr>
+                  <tr>
+                    <td>a="dhoni"<br>
+                        b=7 <br>
+                        print(a+str(b))
+                        print(type(a+b))
+                    </td>
+                    <td>dhoni 7
+                      <br>
+                        class 'string'
+                    </td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+            <h4>3 Different Print statments</h4>
+            <p>find the example to get output by 3 different statments</p>
+            <table>
+              <tr>
+                <td>Input</td>
+                <td>Output</td>
+              </tr>
+              <tr>
+                <td>var="india"
+                    var1=300 <br>
+                    var2="srilanka" <br>
+                    var3=50 <br>
+                    print(var, "scored", var1,"runs against", var2, "in", var3, "overs") <br>
+                    print("%s scored %d runs against %s in %d overs"%(var,var1,var2,var3)) <br>
+                    print("{} scored {} runs against {} in {} overs".format(var,var1,var2,var3)) <br>
+                </td>
+                <td>
+                  india scored 300 runs against srilanka in 50 overs <br>
+                  india scored 300 runs against srilanka in 50 overs <br>
+                  india scored 300 runs against srilanka in 50 overs <br>
+                </td>
+              </tr>
+            </table>
+            <h4>Slicing</h4>
+                 <p>Extracting of a particular word or portion in a string</p>
+                 <p>Can perform in 6 ways</p>
+                 <ol>
+                   <li>using index (if a="vijay",  v starts from 0, in value V starts from 1)slice j (a[2])</li>
+                   <li>Using Negative Value (if a="vijay",  y starts from -1)(a[-3])</li>
+                   <li>Using index & Value (a[2:3])</li>
+                   <li>Using Negative Value & Negative Value (a[-3:-2])</li>
+                   <li>Using index & Negative Value (a[2:-2])</li>
+                   <li>Using Negative Value & index (a[-3:3])</li>
+                 </ol>
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td>a="vijay" <br>
+                        print(a[2]) <br>
+                        print(a[-3]) <br>
+                        print(a[2:3]) <br>
+                        print(a[-3:-2]) <br>
+                        print(a[2:-2]) <br>
+                        print(a[-3:3]) <br>
+                     </td>
+                     <td>
+                       j <br>
+                       j <br>
+                       j <br>
+                       j <br>
+                       j <br>
+                       j <br>
+                     </td>
+                   </tr>
+                 </table>
+                 <h4>Important keys</h4>
+                 <ul>
+                   <li>Var.Count()  Used to count particular word or portin in a full string or required portion in a string</li>
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var="india is my country" <br>
+                       print(var.count("in")) <br>
+                        print(var.count("in",3))<br>
+                      print(var.count("in",3,20)) </td>
+                      <td>1 <br> 0 <br> 0 </td>
+                     </tr>
+                   </table>
+                   <li>Var.index()  Used to find particular word or portin in a full string or required portion in a string <br>
+                       if required data not available, it will show error
+                       <table>
+                         <tr>
+                           <td>Input</td>
+                           <td>Output</td>
+                         </tr>
+                         <tr>
+                           <td> var="india indention india" <br>
+                           print(var.index("in")) <br>
+                            print(var.index("in",3))<br>
+                          print(var.index("in",3,20)) </td>
+                          <td>0 <br> 6 <br> 6 </td>
+                         </tr>
+                       </table>
+                  </li>
+                  <li>Var.find()  Used to find particular word or portin in a full string or required portion in a string <br>
+                       if required data not available, it will show -1
+                       <table>
+                         <tr>
+                           <td>Input</td>
+                           <td>Output</td>
+                         </tr>
+                         <tr>
+                           <td> var="india indention india" <br>
+                           print(var.find("in")) <br>
+                            print(var.find("in",3))<br>
+                          print(var.find("in",8,20)) </td>
+                          <td>0 <br> 6 <br> 16 </td>
+                         </tr>
+                       </table>        </li>
+                  <li>Var.split()   Used to split by given input, before & after
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                        print(var.split("my"))
+                          </td>
+                       <td>['india is ', ' counry']</td>
+                      </tr>
+                    </table>
+                  </li>
+
+                  <li>Var.parition()  Used to make parition by given input, before & after
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                        print(var.partition("my"))
+                          </td>
+                       <td>('india is ', 'my', ' counry')</td>
+                      </tr>
+                    </table>
+                   </li>
+                  <li>var.strip() used to remove strip from  last or first
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.strip("!")) <br>
+                            print(var.lstrip("!")) <br>
+                            print(var.rstrip("!"))
+                          </td>
+                       <td>india is my country <br>
+                          india is my country! <br>
+                          !india is my counry </td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.upper() used to make all elements in upper case in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.upper())
+                          </td>
+                       <td>INDIA IS MY COUNTRY</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.lower() used to make all elements in lower case in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.lower())
+                          </td>
+                       <td>india is my country</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.title() used to make all elements first letter in upper case in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.title())
+                          </td>
+                       <td>India Is My Country</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.capitilize() used to make first letter in upper case in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.capitalize())
+                          </td>
+                       <td>India is my country</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.isupper() used to check all elements in upper case in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.isupper())
+                          </td>
+                       <td>False</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.islower() used to check all elements in lower case in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.islower())
+                          </td>
+                       <td>True</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.istitle() used to check all elements first letter in upper case in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.istitle())
+                          </td>
+                       <td>False</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.startswith() used to check wether string start with given input in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.startswith("india"))
+                          </td>
+                       <td>True</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.endswith() used to check wether string end with given input in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print(var.endswith("india"))
+                          </td>
+                       <td>False</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>("" in var) used to check wether string available with given input in string
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india is my country" <br>
+                            print("is" in var)
+                          </td>
+                       <td>True</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>var.replace("","") used to replace the particular string in copy of memory
+                    <table>
+                      <tr>
+                        <td>Input</td>
+                        <td>Output</td>
+                      </tr>
+                      <tr>
+                        <td> var="india" <br>
+                            print(var.replace("n", "m"))
+                          </td>
+                       <td>imdia</td>
+                      </tr>
+                    </table>
+                  </li>
+
+
+
+                 </ul>
+
+      </div>
+      <div class="card p-5" id="showList" style="display:none;">
+        <h1 style="padding-left: 500px;">LIST</h1>
+        <h2>Introduction</h2>
+        <ul>
+          <li>Any elements enclosed with square brasis seperated by comma called list , ex: a=["vijay",7]</li>
+          <li>Its not ann array, can perform different types</li>
+          <li>Slicing can perform</li>
+          <li>Mutable</li>
+          <h4>Find data type</h4>
+          <p>a=["dhoni",7], will find data type by follwing code</p>
+          <table>
+            <tr>
+              <td>Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td>a=["dhoni",7]<br>
+                  print(a)<br>
+                  print(type(a))
+              </td>
+              <td>['dhoni', 7]
+                <br>
+                  class 'list'
+              </td>
+            </tr>
+          </table>
+          <h4>Slicing</h4>
+               <p>Extracting of a particular word or portion in a string</p>
+               <p>Can perform in 6 ways</p>
+               <ol>
+                 <li>using index   </li>
+                 <li>Using Negative Value </li>
+                 <li>Using index & Value </li>
+                 <li>Using Negative Value & Negative Value </li>
+                 <li>Using index & Negative Value </li>
+                 <li>Using Negative Value & index </li>
+               </ol>
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td>a=["vijay",7] <br>
+                      print(a[0][2]) <br>
+                      print(a[0][-3]) <br>
+                      print(a[0][2:3]) <br>
+                      print(a[0][-3:-2]) <br>
+                      print(a[0][2:-2]) <br>
+                      print(a[0][-3:3]) <br>
+                   </td>
+                   <td>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                   </td>
+                 </tr>
+               </table>
+          <h4>Important Keys</h4>
+             <ul>
+               <li>var.append(), used to add single element in last in list
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.append("jadeja") <br>
+                         print(var)
+                       </td>
+                    <td>['dhoni', 'azar', 'balu', 'kholi', 'jadeja']</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.extend(), used to add multiple element in last in list
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.extend(["jadeja","rahul"]) <br>
+                         print(var)
+                       </td>
+                    <td>['dhoni', 'azar', 'balu', 'kholi', 'jadeja', 'rahul']</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.pop(), if empty remove last element in list, if give an particular index it will remove
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.pop() <br>
+                         print(var)
+                       </td>
+                    <td>['dhoni', 'azar', 'balu']</td>
+                   </tr>
+                 </table>
+                 <br>
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.pop(2) <br>
+                         print(var)
+                       </td>
+                    <td>['dhoni', 'azar', 'kholi']</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.remove(), remove a particular string
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.remove("azhar") <br>
+                         print(var)
+                       </td>
+                    <td>['dhoni', 'balu', 'kholi']</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.insert(), insert a string in particular index in list
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.insert(1,"jadeja") <br>
+                         print(var)
+                       </td>
+                    <td>['dhoni', 'jadeja', 'azar', 'balu', 'kholi']</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.sort(), sort in  ascending order
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.sort() <br>
+                         print(var)
+                       </td>
+                    <td>['azar', 'balu', 'dhoni', 'kholi']</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.sort(reverse.True), sort in  descending order
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.sort(reverse=True) <br>
+                         print(var)
+                       </td>
+                    <td>['kholi', 'dhoni', 'balu', 'azar']</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>len(var), to find length of list
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                                        print(len(var))
+                       </td>
+                    <td>4</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.clear(), clear list
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.clear() <br>
+                        print(var)
+                       </td>
+                    <td>[]</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>del(var), delete  main memory
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=["dhoni","azar","balu","kholi"]<br>
+                       var.delete() <br>
+                        print(var)
+                       </td>
+                    <td>NameError: name 'var' is not defined. Did you mean: 'vars'?</td>
+                   </tr>
+                 </table>
+               </li>
+             </ul>
+      </div>
+      <div class="card p-5" id="showDictionary" style="display:none;">
+        <h1 style="padding-left: 500px;">DICTIONARY</h1>
+        <h2>Introduction</h2>
+        <ul>
+          <li>multiple pair of key&value, key & value sepeated by coloumn, enclosed with curly brasis,
+            seperated by comma called Dictionary , ex: a={"name":"vijay", "age":32}</li>
+          <li>Its not ann array, can perform different types</li>
+          <li>Slicing can perform</li>
+          <li>Mutable</li>
+          <h4>Find data type</h4>
+          <p>a={"name":"vijay", "age":32}, will find data type by follwing code</p>
+          <table>
+            <tr>
+              <td>Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td>a={"name":"dhoni","age":32}<br>
+                  print(a)<br>
+                  print(type(a))
+              </td>
+              <td>{'name': 'dhoni', 'age': 32}
+                <br>
+                  class 'dict'
+              </td>
+            </tr>
+          </table>
+          <h4>Slicing</h4>
+               <p>Extracting of a particular word or portion in a string</p>
+               <p>Can perform in 6 ways</p>
+               <ol>
+                 <li>using index   </li>
+                 <li>Using Negative Value </li>
+                 <li>Using index & Value </li>
+                 <li>Using Negative Value & Negative Value </li>
+                 <li>Using index & Negative Value </li>
+                 <li>Using Negative Value & index </li>
+               </ol>
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td>a={"name":"vijay", "age":10} <br>
+                      print(a["name"][2]) <br>
+                      print(a["name"][-3]) <br>
+                      print(a["name"][2:3]) <br>
+                      print(a["name"][-3:-2]) <br>
+                      print(a["name"][2:-2]) <br>
+                      print(a["name"][-3:3]) <br>
+                   </td>
+                   <td>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                   </td>
+                 </tr>
+               </table>
+            <h4>Importan Keys</h4>
+               <ul>
+                 <li>print(var.keys), print key only from dictionar
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var={"name":"dhoni", "age":10}<br>
+                         print(var.keys())
+                         </td>
+                      <td>dict_keys(['name', 'age'])</td>
+                     </tr>
+                   </table>
+                 </li>
+                 <li>print(var.values), print value only from dictionar
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var={"name":"dhoni", "age":10}<br>
+                         print(var.values())
+                         </td>
+                      <td>dict_values(['dhoni', 10])</td>
+                     </tr>
+                   </table>
+                 </li>
+                 <li>print(var.items), print all items from dictionar
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var={"name":"dhoni", "age":10}<br>
+                         print(var.items())
+                         </td>
+                      <td>dict_items([('name', 'dhoni'), ('age', 10)])</td>
+                     </tr>
+                   </table>
+                 </li>
+                 <li>var.pop(), remove an element with valid key
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var={"name":"dhoni", "age":10}<br>
+                         var.pop("age") <br>
+                         print(var)
+                         </td>
+                      <td>{'name': 'dhoni'}</td>
+                     </tr>
+                   </table>
+                 </li>
+                 <li>var.clear(), make empty dicitionay
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var={"name":"dhoni", "age":10}<br>
+                         var.clear() <br>
+                         print(var)
+                         </td>
+                      <td>{}</td>
+                     </tr>
+                   </table>
+                 </li>
+                 <li>print(var.keys()), find key availability in a dictionary without get error
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var={"name":"dhoni", "age":10}<br>
+                         print(var["gender"])
+                         </td>
+                      <td>KeyError: 'gender'</td>
+                     </tr>
+                   </table>
+                   <br>
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var={"name":"dhoni", "age":10}<br>
+                         print(var.get("gender"))
+                         </td>
+                      <td>None</td>
+                     </tr>
+                   </table>
+
+                 </li>
+                 <li>print(len(var)), check length of dictinary
+                   <table>
+                     <tr>
+                       <td>Input</td>
+                       <td>Output</td>
+                     </tr>
+                     <tr>
+                       <td> var={"name":"dhoni", "age":10}<br>
+                         print(len(var))
+                         </td>
+                      <td>2</td>
+                     </tr>
+                   </table>
+                 </li>
+               </ul>
+      </div>
+      <div class="card p-5" id="showSet" style="display:none;">
+        <h1 style="padding-left: 500px;">SET</h1>
+        <h2>Introduction</h2>
+        <ul>
+          <li>Collection of unordered elements enclosed with curly brasis seperated by comma called list , ex: a={"vijay",7}</li>
+          <li>Its not ann array, can perform different types</li>
+          <li>Slicing cannot perform, Due to unordered list</li>
+          <li>Mutable</li>
+          <li>Duplicates not allowed</li>
+          <h4>Find data type</h4>
+          <p>a={"dhoni", "kholi", 7, 8}, will find data type by follwing code</p>
+          <table>
+            <tr>
+              <td>Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td>a={"dhoni", "kholi", 7, 8}}<br>
+                  print(a)<br>
+                  print(type(a))
+              </td>
+              <td>{"kholi","dhoni", 8, 7}
+                <br>
+                  class 'Set'
+              </td>
+            </tr>
+          </table>
+            <h4>Important Keys</h4>
+             <ul>
+               <li>var.add(), used to add an  element  in set
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                       var.add("sachin") <br>
+                       print(var)
+                       </td>
+                    <td>{'azhar', 'sachin', 'dhoni', 7, 10, 'yuvi'}</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.pop(), used to remove an element in set
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                       var.pop() <br>
+                       print(var)
+                       </td>
+                    <td>{7, 'azhar', 10, 'yuvi'}</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.remove(), used to remove a particular element in set
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                       var.remove("azhar") <br>
+                       print(var)
+                       </td>
+                    <td>{'yuvi', 'dhoni', 7, 10}</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.clear(), used to clear set
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                       var.clear() <br>
+                       print(var)
+                       </td>
+                    <td>set()</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>len(var), to find length of set
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                       print(len(var)))
+                       </td>
+                    <td>5</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>del(var), to delete entire var
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var={"dhoni", "azhar", "yuvi", 7, 10}<br>
+                       del(var) <br>
+                       print(var)
+                       </td>
+                    <td>NameError: name 'var' is not defined. Did you mean: 'vars'?</td>
+                   </tr>
+                 </table>
+               </li>
+             </ul>
+      </div>
+      <div class="card p-5" id="showTuples" style="display:none;">
+        <h2>Introduction</h2>
+        <ul>
+          <li>Any elements enclosed with circle brasis seperated by comma called list , ex: a=("vijay",7)</li>
+          <li>Its not ann array, can perform different types</li>
+          <li>Slicing can perform</li>
+          <li>ImMutable</li>
+          <h4>Find data type</h4>
+          <p>a=("dhoni",7), will find data type by follwing code</p>
+          <table>
+            <tr>
+              <td>Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td>a=("dhoni",7)<br>
+                  print(a)<br>
+                  print(type(a))
+              </td>
+              <td>('dhoni', 7)
+                <br>
+                  class 'tuple'
+              </td>
+            </tr>
+          </table>
+          <h4>Slicing</h4>
+               <p>Extracting of a particular word or portion in a string</p>
+               <p>Can perform in 6 ways</p>
+               <ol>
+                 <li>using index   </li>
+                 <li>Using Negative Value </li>
+                 <li>Using index & Value </li>
+                 <li>Using Negative Value & Negative Value </li>
+                 <li>Using index & Negative Value </li>
+                 <li>Using Negative Value & index </li>
+               </ol>
+               <table>
+                 <tr>
+                   <td>Input</td>
+                   <td>Output</td>
+                 </tr>
+                 <tr>
+                   <td>a=("vijay",7)<br>
+                      print(a[0][2]) <br>
+                      print(a[0][-3]) <br>
+                      print(a[0][2:3]) <br>
+                      print(a[0][-3:-2]) <br>
+                      print(a[0][2:-2]) <br>
+                      print(a[0][-3:3]) <br>
+                   </td>
+                   <td>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                     j <br>
+                   </td>
+                 </tr>
+               </table>
+          <h4>Important Keys</h4>
+             <ul>
+               <li>var.count(), used to count single element  in Tuples
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=("dhoni", 7)<br>
+                       print(var.count("dhoni"))
+                       </td>
+                    <td>1</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>var.index(), used to find index of an  element  in Tuples
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=("dhoni", 7)<br>
+                       print(var.index("dhoni"))
+                       </td>
+                    <td>0</td>
+                   </tr>
+                 </table>
+               </li>
+               <li>len(var), to find length of Tuples
+                 <table>
+                   <tr>
+                     <td>Input</td>
+                     <td>Output</td>
+                   </tr>
+                   <tr>
+                     <td> var=("dhoni", 7)<br>
+                       print(len(var))
+                       </td>
+                    <td>2</td>
+                   </tr>
+                 </table>
+               </li>
+             </ul>
+      </div>
+    </div>
+
+
+
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+  function sequential(){
+    $('#showSequential').show();
+    $('#showBoolean').hide();
+    $('#showNumeric').hide();
+    $('#showString').hide();
+    $('#showList').hide();
+    $('#showDictionary').hide();
+    $('#showSet').hide();
+    $('#showTuples').hide();
+  }
+  function boolean(){
+    $('#showBoolean').show();
+    $('#showSequential').hide();
+    $('#showNumeric').hide();
+    $('#showString').hide();
+    $('#showList').hide();
+    $('#showDictionary').hide();
+    $('#showSet').hide();
+    $('#showTuples').hide();
+  }
+  function numeric(){
+    $('#showNumeric').show();
+    $('#showBoolean').hide();
+    $('#showSequential').hide();
+    $('#showString').hide();
+    $('#showList').hide();
+    $('#showDictionary').hide();
+    $('#showSet').hide();
+    $('#showTuples').hide();
+  }
+  function string(){
+    $('#showSequential').show();
+    $('#showBoolean').hide();
+    $('#showNumeric').hide();
+    $('#showString').show();
+    $('#showList').hide();
+    $('#showDictionary').hide();
+    $('#showSet').hide();
+    $('#showTuples').hide();
+  }
+  function list(){
+    $('#showSequential').show();
+    $('#showBoolean').hide();
+    $('#showNumeric').hide();
+    $('#showString').hide();
+    $('#showList').show();
+    $('#showDictionary').hide();
+    $('#showSet').hide();
+    $('#showTuples').hide();
+  }
+  function dict(){
+    $('#showSequential').show();
+    $('#showBoolean').hide();
+    $('#showNumeric').hide();
+    $('#showString').hide();
+    $('#showList').hide();
+    $('#showDictionary').show();
+    $('#showSet').hide();
+    $('#showTuples').hide();
+  }
+  function set(){
+    $('#showSequential').show();
+    $('#showBoolean').hide();
+    $('#showNumeric').hide();
+    $('#showString').hide();
+    $('#showList').hide();
+    $('#showDictionary').hide();
+    $('#showSet').show();
+    $('#showTuples').hide();
+  }
+  function tuples(){
+    $('#showSequential').show();
+    $('#showBoolean').hide();
+    $('#showNumeric').hide();
+    $('#showString').hide();
+    $('#showList').hide();
+    $('#showDictionary').hide();
+    $('#showSet').hide();
+    $('#showTuples').show();
+  }
+</script>
+</html>

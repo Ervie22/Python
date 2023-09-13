@@ -4,198 +4,226 @@
     <meta charset="utf-8">
     <title>Exception Handling</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   </head>
-  <body background="img1.jpg">
-    <h1 style="padding-left: 500px">Exception Handling</h1>
-    <h2>Introduction</h2>
-    <p>It is defined as method of how we handle the error</p>
-    <p>Ex:1 Normal Exception</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>try: <br>
-          var=10/0 <br>
-        print(var) <br>
-        except: <br>
-        print("good")</td>
-
-        <td>good</td>
-      </tr>
-    </table>
-    <p>Ex:2</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>try: <br>
-          var=10/0 <br>
-        print(var) <br>
-        except(ZeroDivisionError): <br>
-        print("good")</td>
-
-        <td>good</td>
-      </tr>
-    </table>
-    <p>Ex:3</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>try: <br>
-          var=india <br>
-        print(var) <br>
-        except(ZeroDivisionError): <br>
-        print("good") <br>
-        except(NameError): <br>
-        print("bad")</td>
-        <td>bad</td>
-      </tr>
-    </table>
-    <p>Ex:4</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>try: <br>
-          var=india <br>
-        print(var) <br>
-        except(ZeroDivisionError): <br>
-        print("good") <br>
-        except(NameError): <br>
-        print("bad") <br>
-        except: <br>
-        print("hello")</td>
-        <td>hello</td>
-      </tr>
-    </table>
-    <p>Ex:5</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>try: <br>
-          var=10 <br>
-        print(var) <br>
-        except(ZeroDivisionError, TypeError): <br>
-        print("good") <br>
-        except(NameError): <br>
-        print("bad") <br>
-        else: <br>
-        print("hh")</td>
-        <td>10 <br> hh </td>
-      </tr>
-    </table>
-    <p>Ex:6</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>try: <br>
-          var=10+"a" <br>
-        print(var) <br>
-        except(ZeroDivisionError, TypeError): <br>
-        print("good") <br>
-        except: <br>
-        print("bad") <br>
-        else: <br>
-        print("hh") <br>
-      finally: <br>
-      print("hi")</td>
-        <td>good <br> hi </td>
-
-      </tr>
-    </table>
-    <p>Ex:7</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-      <td>try: <br> var=10/0 <br>
-        print(var) <br>
-        except ZeroDivisionError as a: <br>
-        print(a)</td>
-      <td>division by zero</td>
-      </tr>
-    </table>
-    <p>Ex:8</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>try: <br>var=dhoni <br>
+  <body >
+    <div class="container">
+      <div class="card p-5">
+        <div class="card-header">
+          <h1 style="padding-left: 500px;">Python Tutorial</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a  href="index.html" class="btn btn-sm ">Introduction</a>
+              <a   href="datatypes.html" class="btn btn-sm ">Data Types</a>
+              <a  href="looping.html" class="btn btn-sm">Looping</a>
+              <a  href="function.html" class="btn btn-sm ">Function</a>
+              <a  href="comp.html" class="btn btn-sm">Comprehension</a>
+              <a  href="lambda.html" class="btn btn-sm">Lamda Function</a>
+              <a  href="Net.html" class="btn btn-sm ">Network Program</a>
+              <a  href="execption.html" class="btn btn-sm btn-primary">Exception Handling</a>
+              <a  href="class.html" class="btn btn-sm">Class</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-5" style="margin-top: 100px;">
+        <h1 style="padding-left: 500px">Exception Handling</h1>
+        <h2>Introduction</h2>
+        <p>It is defined as method of how we handle the error</p>
+        <p>Ex:1 Normal Exception</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>try: <br>
+              var=10/0 <br>
             print(var) <br>
+            except: <br>
+            print("good")</td>
+
+            <td>good</td>
+          </tr>
+        </table>
+        <p>Ex:2</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>try: <br>
+              var=10/0 <br>
+            print(var) <br>
+            except(ZeroDivisionError): <br>
+            print("good")</td>
+
+            <td>good</td>
+          </tr>
+        </table>
+        <p>Ex:3</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>try: <br>
+              var=india <br>
+            print(var) <br>
+            except(ZeroDivisionError): <br>
+            print("good") <br>
+            except(NameError): <br>
+            print("bad")</td>
+            <td>bad</td>
+          </tr>
+        </table>
+        <p>Ex:4</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>try: <br>
+              var=india <br>
+            print(var) <br>
+            except(ZeroDivisionError): <br>
+            print("good") <br>
+            except(NameError): <br>
+            print("bad") <br>
+            except: <br>
+            print("hello")</td>
+            <td>hello</td>
+          </tr>
+        </table>
+        <p>Ex:5</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>try: <br>
+              var=10 <br>
+            print(var) <br>
+            except(ZeroDivisionError, TypeError): <br>
+            print("good") <br>
+            except(NameError): <br>
+            print("bad") <br>
+            else: <br>
+            print("hh")</td>
+            <td>10 <br> hh </td>
+          </tr>
+        </table>
+        <p>Ex:6</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>try: <br>
+              var=10+"a" <br>
+            print(var) <br>
+            except(ZeroDivisionError, TypeError): <br>
+            print("good") <br>
+            except: <br>
+            print("bad") <br>
+            else: <br>
+            print("hh") <br>
+          finally: <br>
+          print("hi")</td>
+            <td>good <br> hi </td>
+
+          </tr>
+        </table>
+        <p>Ex:7</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+          <td>try: <br> var=10/0 <br>
+            print(var) <br>
+            except ZeroDivisionError as a: <br>
+            print(a)</td>
+          <td>division by zero</td>
+          </tr>
+        </table>
+        <p>Ex:8</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>try: <br>var=dhoni <br>
+                print(var) <br>
+              except Exception as a: <br>
+            print(a)</td>
+            <td>name 'dhoni' is not defined</td>
+          </tr>
+
+        </table>
+        <p>Ex:9</p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+          <td>try: <br>
+          def fun(a,b) <br>
+          print(a+b) <br>
+          fun() <br>
+          except Exception as a: <br>
+          print(a)
+        </td>
+        <td>fun() missing 2 required positional arguments: 'a' and 'b'</td>
+          </tr>
+        </table>
+        <p>Ex:10 Create exception Handling </p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>try: <br>
+            var=10 <br>
+            if(var>2): <br>
+            raise Exception ("good") <br>
           except Exception as a: <br>
         print(a)</td>
-        <td>name 'dhoni' is not defined</td>
-      </tr>
+        <td>good</td>
+          </tr>
+        </table>
+        <p>Ex:10 Create exception Handling </p>
+        <table>
+          <tr>
+            <td>Input</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>class Error(Exception): <br>
+              var=("good") <br> try: <br>
+            var=10 <br>
+            if(var>2): <br>
+            raise Error <br>
+          except Error as a: <br>
+        print(a.var)</td>
+        <td>good</td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
-    </table>
-    <p>Ex:9</p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-      <td>try: <br>
-      def fun(a,b) <br>
-      print(a+b) <br>
-      fun() <br>
-      except Exception as a: <br>
-      print(a)
-    </td>
-    <td>fun() missing 2 required positional arguments: 'a' and 'b'</td>
-      </tr>
-    </table>
-    <p>Ex:10 Create exception Handling </p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>try: <br>
-        var=10 <br>
-        if(var>2): <br>
-        raise Exception ("good") <br>
-      except Exception as a: <br>
-    print(a)</td>
-    <td>good</td>
-      </tr>
-    </table>
-    <p>Ex:10 Create exception Handling </p>
-    <table>
-      <tr>
-        <td>Input</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>class Error(Exception): <br>
-          var=("good") <br> try: <br>
-        var=10 <br>
-        if(var>2): <br>
-        raise Error <br>
-      except Error as a: <br>
-    print(a.var)</td>
-    <td>good</td>
-      </tr>
-    </table>
   </body>
 </html>

@@ -4,246 +4,273 @@
     <meta charset="utf-8">
     <title>Function</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   </head>
-  <body background="img1.jpg">
-    <h2 style="padding-left: 500px;">Function</h2>
-    <h3>Introduction</h3>
-        <p>functions is group of related statements, that can perform specific tasks.
-      it can be executed, when we call that function only by its name
-    </p>
-    <h4>Advantages</h4>
-    <ul>
-      <li>Secure</li>
-      <li>code reusability</li>
-      <li>better understanding</li>
-      <li>compact</li>
-    </ul>
-      <h4>Function with Zero argument</h4>
-      <table>
-        <tr>
-          <td>Input</td>
-          <td>Output</td>
-        </tr>
-        <tr>
-          <td><br>
-              def new() <br>
-               print("success")<br>
-              new()
-          </td>
-          <td> success
-                  </td>
-        </tr>
-      </table>
-      <h4>Function with One argument</h4>
-      <table>
-        <tr>
-          <td>Input</td>
-          <td>Output</td>
-        </tr>
-        <tr>
-          <td><br>
-              def new(a) <br>
-               print("success")<br>
-              new(a)
-          </td>
-          <td> success
-                  </td>
-        </tr>
-      </table>
-      <h4>Function with Two or Multi argument</h4>
-      <table>
-        <tr>
-          <td>Input</td>
-          <td>Output</td>
-        </tr>
-        <tr>
-          <td><br>
-              def new(a,b) <br>
-               print(a, "Scored", b, "runs")<br>
-              new("Dhoni", 100)
-          </td>
-          <td> Dhoni scored 100 runs
-                  </td>
-        </tr>
-      </table>
-     <h4>Important points</h4>
-     <ul>
-       <li>It can perform only when given argument equal to output argument, if it less than or greater than, it will show error</li>
-       <table>
-         <tr>
-           <td>Input</td>
-           <td>Output</td>
-         </tr>
-         <tr>
-           <td>def fun(a,b) <br>
-              print(a, "Scored", b, "runs") <br>
-              fun("dhoni")
-               </td>
-            <td> fun() missing 1 required positional argument: 'b'</td>
-         </tr>
-       </table>
-  ex :2
-     <table>
-       <tr>
-         <td>Input</td>
-         <td>Output</td>
-       </tr>
-       <tr>
-         <td>def fun(a,b) <br>
-            print(a, "Scored", b, "runs") <br>
-            fun("dhoni",100,50)
-             </td>
-          <td> fun() takes 2 positional arguments but 3 were given</td>
-       </tr>
-     </table>
-     <li>It can perform when we declare the argument with input, it possible only 2nd argument</li>
-     <table>
-       <tr>
-         <td>Input</td>
-         <td>Output</td>
-       </tr>
-       <tr>
-         <td>def fun(a,b=100) <br>
-            print(a, "Scored", b, "runs") <br>
-            fun("dhoni")
-             </td>
-          <td> Dhoni scored 100 runs</td>
-       </tr>
-     </table>
-ex :2
-   <table>
-     <tr>
-       <td>Input</td>
-       <td>Output</td>
-     </tr>
-     <tr>
-       <td>def fun(b,a="Dhoni") <br>
-          print(a, "Scored", b, "runs") <br>
-          fun("100,)
-           </td>
-        <td> Dhoni scored 100 runs</td>
-     </tr>
-   </table>
-   <li>Code Reusability</li>
-   <table>
-     <tr>
-       <td>Input</td>
-       <td>Output</td>
-     </tr>
-     <tr>
-       <td>def fun(a,b): <br>
-          print(a+b) <br>
-          fun(10,20) <br>
-          fun(200,765)
-           </td>
-        <td> 30 <br> 965</td>
-     </tr>
-   </table>
-   <li>We can declare multiple inputs for sigle argument by using * in fornt of argument, output will came in Tuples</li>
-   <table>
-     <tr>
-       <td>Input</td>
-       <td>Output</td>
-     </tr>
-     <tr>
-       <td>def fun(*a): <br>
-          print(a) <br>
-          fun(10, "dhoni") <br>
-          fun(10,20) <br>
-          fun(10,20,30,40,50)
-           </td>
-        <td> (10, 'dhoni') <br> (10, 20) <br> (10, 20, 30, 40, 50)</td>
-     </tr>
-   </table>
-   <li>We can declare multiple arguments as input by using ** in fornt of argument, output will came in Dictionary</li>
-   <table>
-     <tr>
-       <td>Input</td>
-       <td>Output</td>
-     </tr>
-     <tr>
-       <td>def fun(**a): <br>
-          print(a) <br>
-          fun(10, "dhoni") <br>
-          fun(a=10) <br>
-          fun(b=10,c=20)
-           </td>
-        <td> {'a': 10} <br> {'b': 10, 'c': 20} </td>
-     </tr>
-   </table>
-   <li>Return function used to get value of output & it should be last line of the program</li>
-   <table>
-     <tr>
-       <td>Input</td>
-       <td>Output</td>
-     </tr>
-     <tr>
-       <td>def fun(a,b): <br>
-          print(a+b) <br>
-          return(a+b) <br>
-          a=fun(a+b)   <br>
-          c=5 <br>
-          print(a*c)
-           </td>
-        <td> 15 </td>
-     </tr>
-   </table>
-Ex:2 Return function as last line
-   <table>
-     <tr>
-       <td>Input</td>
-       <td>Output</td>
-     </tr>
-     <tr>
-       <td>def fun(a,b): <br>
-         print("success")
-          print(a+b) <br>
-          return"good" <br>
-          c=fun(10,20) <br>
-          print(c)
-           </td>
-        <td> success <br> 30 <br> good </td>
-     </tr>
-   </table>
-   Ex:3 Return function as last before line
-      <table>
-        <tr>
-          <td>Input</td>
-          <td>Output</td>
-        </tr>
-        <tr>
-          <td>def fun(a,b): <br>
-            print("success") <br>
-            return"good" <br>
-             print(a+b) <br>
-             c=fun(10,20) <br>
-             print(c)
+  <body >
+    <div class="container">
+      <div class="card p-5">
+        <div class="card-header">
+          <h1 style="padding-left: 500px;">Python Tutorial</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a  href="index.html" class="btn btn-sm ">Introduction</a>
+              <a   href="datatypes.html" class="btn btn-sm ">Data Types</a>
+              <a  href="looping.html" class="btn btn-sm">Looping</a>
+              <a  href="function.html" class="btn btn-sm btn-primary">Function</a>
+              <a  href="comp.html" class="btn btn-sm">Comprehension</a>
+              <a  href="lambda.html" class="btn btn-sm">Lamda Function</a>
+              <a  href="Net.html" class="btn btn-sm ">Network Program</a>
+              <a  href="execption.html" class="btn btn-sm">Exception Handling</a>
+              <a  href="class.html" class="btn btn-sm">Class</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-5" style="margin-top: 100px;">
+        <h3>Introduction</h3>
+            <p>functions is group of related statements, that can perform specific tasks.
+          it can be executed, when we call that function only by its name
+        </p>
+        <h4>Advantages</h4>
+        <ul>
+          <li>Secure</li>
+          <li>code reusability</li>
+          <li>better understanding</li>
+          <li>compact</li>
+        </ul>
+          <h4>Function with Zero argument</h4>
+          <table>
+            <tr>
+              <td>Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td><br>
+                  def new() <br>
+                   print("success")<br>
+                  new()
               </td>
-           <td> success <br>  good </td>
-        </tr>
-      </table>
-      Ex:4 Return function as first line
+              <td> success
+                      </td>
+            </tr>
+          </table>
+          <h4>Function with One argument</h4>
+          <table>
+            <tr>
+              <td>Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td><br>
+                  def new(a) <br>
+                   print("success")<br>
+                  new(a)
+              </td>
+              <td> success
+                      </td>
+            </tr>
+          </table>
+          <h4>Function with Two or Multi argument</h4>
+          <table>
+            <tr>
+              <td>Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td><br>
+                  def new(a,b) <br>
+                   print(a, "Scored", b, "runs")<br>
+                  new("Dhoni", 100)
+              </td>
+              <td> Dhoni scored 100 runs
+                      </td>
+            </tr>
+          </table>
+         <h4>Important points</h4>
+         <ul>
+           <li>It can perform only when given argument equal to output argument, if it less than or greater than, it will show error</li>
+           <table>
+             <tr>
+               <td>Input</td>
+               <td>Output</td>
+             </tr>
+             <tr>
+               <td>def fun(a,b) <br>
+                  print(a, "Scored", b, "runs") <br>
+                  fun("dhoni")
+                   </td>
+                <td> fun() missing 1 required positional argument: 'b'</td>
+             </tr>
+           </table>
+        ex :2
          <table>
            <tr>
              <td>Input</td>
              <td>Output</td>
            </tr>
            <tr>
-             <td>def fun(a,b): <br>
-               return"good" <br>
-               print("success") <br>
-                print(a+b) <br>
-                c=fun(10,20) <br>
-                print(c)
+             <td>def fun(a,b) <br>
+                print(a, "Scored", b, "runs") <br>
+                fun("dhoni",100,50)
                  </td>
-              <td>  good </td>
+              <td> fun() takes 2 positional arguments but 3 were given</td>
            </tr>
          </table>
+         <li>It can perform when we declare the argument with input, it possible only 2nd argument</li>
+         <table>
+           <tr>
+             <td>Input</td>
+             <td>Output</td>
+           </tr>
+           <tr>
+             <td>def fun(a,b=100) <br>
+                print(a, "Scored", b, "runs") <br>
+                fun("dhoni")
+                 </td>
+              <td> Dhoni scored 100 runs</td>
+           </tr>
+         </table>
+        ex :2
+        <table>
+         <tr>
+           <td>Input</td>
+           <td>Output</td>
+         </tr>
+         <tr>
+           <td>def fun(b,a="Dhoni") <br>
+              print(a, "Scored", b, "runs") <br>
+              fun("100,)
+               </td>
+            <td> Dhoni scored 100 runs</td>
+         </tr>
+        </table>
+        <li>Code Reusability</li>
+        <table>
+         <tr>
+           <td>Input</td>
+           <td>Output</td>
+         </tr>
+         <tr>
+           <td>def fun(a,b): <br>
+              print(a+b) <br>
+              fun(10,20) <br>
+              fun(200,765)
+               </td>
+            <td> 30 <br> 965</td>
+         </tr>
+        </table>
+        <li>We can declare multiple inputs for sigle argument by using * in fornt of argument, output will came in Tuples</li>
+        <table>
+         <tr>
+           <td>Input</td>
+           <td>Output</td>
+         </tr>
+         <tr>
+           <td>def fun(*a): <br>
+              print(a) <br>
+              fun(10, "dhoni") <br>
+              fun(10,20) <br>
+              fun(10,20,30,40,50)
+               </td>
+            <td> (10, 'dhoni') <br> (10, 20) <br> (10, 20, 30, 40, 50)</td>
+         </tr>
+        </table>
+        <li>We can declare multiple arguments as input by using ** in fornt of argument, output will came in Dictionary</li>
+        <table>
+         <tr>
+           <td>Input</td>
+           <td>Output</td>
+         </tr>
+         <tr>
+           <td>def fun(**a): <br>
+              print(a) <br>
+              fun(10, "dhoni") <br>
+              fun(a=10) <br>
+              fun(b=10,c=20)
+               </td>
+            <td> {'a': 10} <br> {'b': 10, 'c': 20} </td>
+         </tr>
+        </table>
+        <li>Return function used to get value of output & it should be last line of the program</li>
+        <table>
+         <tr>
+           <td>Input</td>
+           <td>Output</td>
+         </tr>
+         <tr>
+           <td>def fun(a,b): <br>
+              print(a+b) <br>
+              return(a+b) <br>
+              a=fun(a+b)   <br>
+              c=5 <br>
+              print(a*c)
+               </td>
+            <td> 15 </td>
+         </tr>
+        </table>
+        Ex:2 Return function as last line
+        <table>
+         <tr>
+           <td>Input</td>
+           <td>Output</td>
+         </tr>
+         <tr>
+           <td>def fun(a,b): <br>
+             print("success")
+              print(a+b) <br>
+              return"good" <br>
+              c=fun(10,20) <br>
+              print(c)
+               </td>
+            <td> success <br> 30 <br> good </td>
+         </tr>
+        </table>
+        Ex:3 Return function as last before line
+          <table>
+            <tr>
+              <td>Input</td>
+              <td>Output</td>
+            </tr>
+            <tr>
+              <td>def fun(a,b): <br>
+                print("success") <br>
+                return"good" <br>
+                 print(a+b) <br>
+                 c=fun(10,20) <br>
+                 print(c)
+                  </td>
+               <td> success <br>  good </td>
+            </tr>
+          </table>
+          Ex:4 Return function as first line
+             <table>
+               <tr>
+                 <td>Input</td>
+                 <td>Output</td>
+               </tr>
+               <tr>
+                 <td>def fun(a,b): <br>
+                   return"good" <br>
+                   print("success") <br>
+                    print(a+b) <br>
+                    c=fun(10,20) <br>
+                    print(c)
+                     </td>
+                  <td>  good </td>
+               </tr>
+             </table>
 
 
 
-     </ul>
+         </ul>
 
+
+      </div>
+    </div>
 
   </body>
 </html>

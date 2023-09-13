@@ -4,296 +4,324 @@
     <meta charset="utf-8">
     <title>Comprehension</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   </head>
-  <body background="img1.jpg">
-    <h1 style="padding-left: 500px;">Comprehension</h1>
-    <h2>Introduction</h2>
-    <p>List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.</p>
-    <p>Ex:1 Basic Print statement</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>var=[5,10,2,3] <br>
-          x=[] <br>
-          for a in var: <br>
-          x.append(a) <br>
-          print(x)
+  <body >
+    <div class="container">
+      <div class="card p-5">
+        <div class="card-header">
+          <h1 style="padding-left: 500px;">Python Tutorial</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a  href="index.html" class="btn btn-sm ">Introduction</a>
+              <a   href="datatypes.html" class="btn btn-sm ">Data Types</a>
+              <a  href="looping.html" class="btn btn-sm">Looping</a>
+              <a  href="function.html" class="btn btn-sm ">Function</a>
+              <a  href="comp.html" class="btn btn-sm btn-primary">Comprehension</a>
+              <a  href="lambda.html" class="btn btn-sm">Lamda Function</a>
+              <a  href="Net.html" class="btn btn-sm ">Network Program</a>
+              <a  href="execption.html" class="btn btn-sm">Exception Handling</a>
+              <a  href="class.html" class="btn btn-sm">Class</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-5" style="margin-top: 100px;">
+        <h1 style="padding-left: 500px;">Comprehension</h1>
+        <h2>Introduction</h2>
+        <p>List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.</p>
+        <p>Ex:1 Basic Print statement</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>var=[5,10,2,3] <br>
+              x=[] <br>
+              for a in var: <br>
+              x.append(a) <br>
+              print(x)
+            </td>
+            <td> var=[5,10,2,3] <br>
+              z=[x for x in var] <br>
+              print(z)
+            </td>
+            <td>[5, 10, 2, 3]</td>
+          </tr>
+        </table>
+        <p>Ex:2 Make element square values</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>var=[5,10,2,3] <br>
+              x=[] <br>
+              for a in var: <br>
+              b=a*a <br>
+              x.append(b) <br>
+              print(x)
+            </td>
+            <td> var=[5,10,2,3] <br>
+              z=[x*x for x in var] <br>
+              print(z)
+            </td>
+            <td>[25, 100, 4, 9]</td>
+          </tr>
+        </table>
+        <p>Ex:3 find even numbers</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>var=[5,10,2,3] <br>
+              x=[] <br>
+              for a in var: <br>
+              if(a%2==0): <br>
+              x.append(a) <br>
+              print(x)
+            </td>
+            <td> var=[5,10,2,3] <br>
+              z=[x for x in var if x%2==0] <br>
+              print(z)
+            </td>
+            <td>[10, 2]</td>
+          </tr>
+        </table>
+        <p>Ex:4 Multiple of given limit</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td> c=[] <br>
+            for x in range(1,6): <br>
+            for y in range(5,6): <br>
+            c.append(x*y) <br>
+            print(c)
+            </td>
+            <td>v=[x*y for x in range(1,6) for y in range(5,6)] <br>
+            print(v)
+            </td>
+            <td>[5, 10, 15, 20, 25]</td>
+          </tr>
+        </table>
+        <p>Ex:5 Find even Odd</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=[5,10,7,2,8] <br>
+              b=[] <br>
+               c=[] <br>
+            for x in a: <br>
+            if(x%2==0): <br>
+            b.append(x) <br>
+            else: <br>
+            c.append(x) <br>
+            print(b) <br>
+            print(c)
+            </td>
+            <td>a=[5,10,7,2,8] <br>
+              v=["even" if(x%2==0) else "odd" for x in a] <br>
+            print(v)
+            </td>
+            <td>[10, 2, 8] <br>
+                [5, 7] <br>
+                ['odd', 'even', 'odd', 'even', 'even']
         </td>
-        <td> var=[5,10,2,3] <br>
-          z=[x for x in var] <br>
-          print(z)
+          </tr>
+        </table>
+        <p>Ex:6 Make Dictionary</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=[5,10,7,2,8] <br>
+              b={} <br>
+              for x in a: <br>
+            b[x]=x <br>
+            print(b)
+            </td>
+            <td>a=[5,10,7,2,8] <br>
+              z={x:x for x in a} <br>
+            print(z)
+            </td>
+            <td>{5: 5, 10: 10, 7: 7, 2: 2, 8: 8}</td>
+          </tr>
+        </table>
+        <p>Ex:7 Make Dictionary as value is square of key</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=[5,10,7,2,8] <br>
+              b={} <br>
+              for x in a: <br>
+            b[x]=x*x <br>
+            print(b)
+            </td>
+            <td>a=[5,10,7,2,8] <br>
+              z={x:(x*x) for x in a} <br>
+            print(z)
+            </td>
+            <td>{5: 25, 10: 100, 7: 49, 2: 4, 8: 64}</td>
+          </tr>
+        </table>
+        <p>Ex:8 find even</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=[5,10,7,2,8] <br>
+              b={} <br>
+              for x in a: <br>
+              if(x%2==0): <br>
+            b[x]=x <br>
+            print(b)
+            </td>
+            <td>a=[5,10,7,2,8] <br>
+              z={x:x for x in a if(x%2==0)} <br>
+            print(z)
+            </td>
+            <td>{ 10: 10, 2: 2, 8: 8}</td>
+          </tr>
+        </table>
+        <p>Ex:9 make dict by combine 2 list</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=["csk", "mi", "rcb"]<br>
+              b=["dhoni", "rohit", "kholi"] <br>
+              c=list(zip(a,b)) <br>
+              d={} <br>
+            for x,y in c: <br>
+            d[x]=y <br>
+            print(b)
+            </td>
+            <td>a=["csk", "mi", "rcb"]<br>
+              b=["dhoni", "rohit", "kholi"] <br>
+              z={x:y for x,y in zip(a,b)}<br>
+            print(z)
+            </td>
+            <td>{'csk': 'dhoni', 'mi': 'rohit', 'rcb': 'kholi'}</td>
+          </tr>
+        </table>
+        <p>Ex:10 Make Set</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=[5,10,7,2,8] <br>
+              b=set() <br>
+              for x in a: <br>
+            b.add(x) <br>
+            print(b)
+            </td>
+            <td>a=[5,10,7,2,8] <br>
+              z={x for x in a} <br>
+            print(z)
+            </td>
+            <td>{ 5, 10, 7, 2, 8}</td>
+          </tr>
+        </table>
+        <p>Ex:11 Find even Odd</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=[5,10,7,2,8] <br>
+              b=set() <br>
+               c=set() <br>
+            for x in a: <br>
+            if(x%2==0): <br>
+            b.add(x) <br>
+            else: <br>
+            c.add(x) <br>
+            print(b) <br>
+            print(c)
+            </td>
+            <td>a=[5,10,7,2,8] <br>
+              v={"even" if(x%2==0) else "odd" for x in a} <br>
+            print(v)
+            </td>
+            <td>{10, 2, 8} <br>
+                {5, 7} <br>
+                {'odd', 'even'}
         </td>
-        <td>[5, 10, 2, 3]</td>
-      </tr>
-    </table>
-    <p>Ex:2 Make element square values</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>var=[5,10,2,3] <br>
-          x=[] <br>
-          for a in var: <br>
-          b=a*a <br>
-          x.append(b) <br>
-          print(x)
+          </tr>
+        </table>
+        <p>Ex:12 Tuples Cannot perform in perform in Comprehension, so we use generator to get output</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=[5,10,7,2,8] <br>
+              b=set() <br>
+               c=set() <br>
+            for x in a: <br>
+            if(x%2==0): <br>
+            b.add(x) <br>
+            else: <br>
+            c.add(x) <br>
+            print(b) <br>
+            print(c)
+            </td>
+            <td>a=[5,10,7,2,8] <br>
+              v=("even" if(x%2==0) else "odd" for x in a) <br>
+            print(v) <br>
+            for x in v: <br>
+            print(x)
+            </td>
+            <td>{10, 2, 8} <br>
+                {5, 7} <br>
+                <generator object <genexpr> at 0x0000013654F95A10> <br>
+        10 <br>
+        2 <br>
         </td>
-        <td> var=[5,10,2,3] <br>
-          z=[x*x for x in var] <br>
-          print(z)
-        </td>
-        <td>[25, 100, 4, 9]</td>
-      </tr>
-    </table>
-    <p>Ex:3 find even numbers</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>var=[5,10,2,3] <br>
-          x=[] <br>
-          for a in var: <br>
-          if(a%2==0): <br>
-          x.append(a) <br>
-          print(x)
-        </td>
-        <td> var=[5,10,2,3] <br>
-          z=[x for x in var if x%2==0] <br>
-          print(z)
-        </td>
-        <td>[10, 2]</td>
-      </tr>
-    </table>
-    <p>Ex:4 Multiple of given limit</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td> c=[] <br>
-        for x in range(1,6): <br>
-        for y in range(5,6): <br>
-        c.append(x*y) <br>
-        print(c)
-        </td>
-        <td>v=[x*y for x in range(1,6) for y in range(5,6)] <br>
-        print(v)
-        </td>
-        <td>[5, 10, 15, 20, 25]</td>
-      </tr>
-    </table>
-    <p>Ex:5 Find even Odd</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=[5,10,7,2,8] <br>
-          b=[] <br>
-           c=[] <br>
-        for x in a: <br>
-        if(x%2==0): <br>
-        b.append(x) <br>
-        else: <br>
-        c.append(x) <br>
-        print(b) <br>
-        print(c)
-        </td>
-        <td>a=[5,10,7,2,8] <br>
-          v=["even" if(x%2==0) else "odd" for x in a] <br>
-        print(v)
-        </td>
-        <td>[10, 2, 8] <br>
-            [5, 7] <br>
-            ['odd', 'even', 'odd', 'even', 'even']
-</td>
-      </tr>
-    </table>
-    <p>Ex:6 Make Dictionary</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=[5,10,7,2,8] <br>
-          b={} <br>
-          for x in a: <br>
-        b[x]=x <br>
-        print(b)
-        </td>
-        <td>a=[5,10,7,2,8] <br>
-          z={x:x for x in a} <br>
-        print(z)
-        </td>
-        <td>{5: 5, 10: 10, 7: 7, 2: 2, 8: 8}</td>
-      </tr>
-    </table>
-    <p>Ex:7 Make Dictionary as value is square of key</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=[5,10,7,2,8] <br>
-          b={} <br>
-          for x in a: <br>
-        b[x]=x*x <br>
-        print(b)
-        </td>
-        <td>a=[5,10,7,2,8] <br>
-          z={x:(x*x) for x in a} <br>
-        print(z)
-        </td>
-        <td>{5: 25, 10: 100, 7: 49, 2: 4, 8: 64}</td>
-      </tr>
-    </table>
-    <p>Ex:8 find even</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=[5,10,7,2,8] <br>
-          b={} <br>
-          for x in a: <br>
-          if(x%2==0): <br>
-        b[x]=x <br>
-        print(b)
-        </td>
-        <td>a=[5,10,7,2,8] <br>
-          z={x:x for x in a if(x%2==0)} <br>
-        print(z)
-        </td>
-        <td>{ 10: 10, 2: 2, 8: 8}</td>
-      </tr>
-    </table>
-    <p>Ex:9 make dict by combine 2 list</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=["csk", "mi", "rcb"]<br>
-          b=["dhoni", "rohit", "kholi"] <br>
-          c=list(zip(a,b)) <br>
-          d={} <br>
-        for x,y in c: <br>
-        d[x]=y <br>
-        print(b)
-        </td>
-        <td>a=["csk", "mi", "rcb"]<br>
-          b=["dhoni", "rohit", "kholi"] <br>
-          z={x:y for x,y in zip(a,b)}<br>
-        print(z)
-        </td>
-        <td>{'csk': 'dhoni', 'mi': 'rohit', 'rcb': 'kholi'}</td>
-      </tr>
-    </table>
-    <p>Ex:10 Make Set</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=[5,10,7,2,8] <br>
-          b=set() <br>
-          for x in a: <br>
-        b.add(x) <br>
-        print(b)
-        </td>
-        <td>a=[5,10,7,2,8] <br>
-          z={x for x in a} <br>
-        print(z)
-        </td>
-        <td>{ 5, 10, 7, 2, 8}</td>
-      </tr>
-    </table>
-    <p>Ex:11 Find even Odd</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=[5,10,7,2,8] <br>
-          b=set() <br>
-           c=set() <br>
-        for x in a: <br>
-        if(x%2==0): <br>
-        b.add(x) <br>
-        else: <br>
-        c.add(x) <br>
-        print(b) <br>
-        print(c)
-        </td>
-        <td>a=[5,10,7,2,8] <br>
-          v={"even" if(x%2==0) else "odd" for x in a} <br>
-        print(v)
-        </td>
-        <td>{10, 2, 8} <br>
-            {5, 7} <br>
-            {'odd', 'even'}
-</td>
-      </tr>
-    </table>
-    <p>Ex:12 Tuples Cannot perform in perform in Comprehension, so we use generator to get output</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=[5,10,7,2,8] <br>
-          b=set() <br>
-           c=set() <br>
-        for x in a: <br>
-        if(x%2==0): <br>
-        b.add(x) <br>
-        else: <br>
-        c.add(x) <br>
-        print(b) <br>
-        print(c)
-        </td>
-        <td>a=[5,10,7,2,8] <br>
-          v=("even" if(x%2==0) else "odd" for x in a) <br>
-        print(v) <br>
-        for x in v: <br>
-        print(x)
-        </td>
-        <td>{10, 2, 8} <br>
-            {5, 7} <br>
-            <generator object <genexpr> at 0x0000013654F95A10> <br>
-10 <br>
-2 <br>
-</td>
-      </tr>
-    </table>
+          </tr>
+        </table>
+
+      </div>
+    </div>
 
   </body>
 </html>

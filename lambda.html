@@ -4,139 +4,167 @@
     <meta charset="utf-8">
     <title>Lambda function</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   </head>
-  <body background="img1.jpg">
-    <h1 style="padding-left: 500px;">Lambda Funtion</h1>
-    <h2>Introduction</h2>
-    <p>it is an anonymus funtion, it is used to imitate the function</p>
-    <p>Ex:1 Basic Print statement</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>def fun(a): <br>
-          print(a)  <br>
-          fun(10)
-        </td>
-        <td> def fun(a): <br>
-          print(a)  <br>
-          fun(10) <br>
-          var=lambda a:a <br>
-          print(var(10))
-        </td>
-        <td>10</td>
-      </tr>
-    </table>
-    <p>Ex:2 2 argument</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>def fun(a,b): <br>
-          print(a*b)  <br>
-          fun(10,2)
-        </td>
-        <td> def fun(a): <br>
-          print(a)  <br>
-          fun(10) <br>
-          var=lambda a,b:a*b<br>
-          print(var(10,2))
-        </td>
-        <td>20</td>
-      </tr>
-    </table>
-      <p>Ex:3 square the element valus in list(Map)</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>var=[10,7,2,4,5] <br>
-          a=[] <br>
-          for x in var: <br>
-          a.append(x**2) <br>
-          print(a)
-        </td>
-        <td> var=[10,7,2,4,5] <br>
-           z=list(map(lambda x:x**2, var ))<br>
-          print(z)
-        </td>
-        <td>[100,49,4,16,25]</td>
-      </tr>
-    </table>
-    <p>Ex:4 Find Even Numbers(Filter)</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td> var=[10,7,2,3,4] <br>
-          a=[]
-        for x in var: <br>
-        if(x%2==0) <br>
-        a.append(x) <br>
-        print(a)
-        </td>
-        <td>var=[10,7,2,3,4] <br>
-          z=list(filter(lambda x:x%2==0, var))
-        print(z)
-        </td>
-        <td>[10,2,4]</td>
-      </tr>
-    </table>
-    <p>Ex:5 add with elements</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>output</td>
-      </tr>
-      <tr>
-        <td>var=[10,7,2,4,5] <br>
-          a=[] <br>
-          for x in var: <br>
-          a.append(x+2) <br>
-          print(a)
-        </td>
-        <td> var=[10,7,2,4,5] <br>
-           z=list(map(lambda x:x+2, var ))<br>
-          print(z)
-        </td>
-        <td>[12,9,4,6,7]</td>
-      </tr>
-    </table>
-    <p>Ex:6 Make Dictionary</p>
-    <table>
-      <tr>
-        <td>Traditional</td>
-        <td>Comprehension</td>
-        <td>Output</td>
-      </tr>
-      <tr>
-        <td>a=[5,10,7,2,8] <br>
-          b=0 <br>
-          for x in a: <br>
-        a=a+x<br>
-        print(b)
-        </td>
-        <td>a=[5,10,7,2,8] <br>
-          from funtiontools import reduce <br>
-          z=reduce(lambda x,y:x+y, var)
-        print(z)
-        </td>
-        <td>32</td>
-      </tr>
-    </table>
+  <body >
+    <div class="container">
+      <div class="card p-5">
+        <div class="card-header">
+          <h1 style="padding-left: 500px;">Python Tutorial</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a  href="index.html" class="btn btn-sm ">Introduction</a>
+              <a   href="datatypes.html" class="btn btn-sm ">Data Types</a>
+              <a  href="looping.html" class="btn btn-sm">Looping</a>
+              <a  href="function.html" class="btn btn-sm ">Function</a>
+              <a  href="comp.html" class="btn btn-sm">Comprehension</a>
+              <a  href="lambda.html" class="btn btn-sm btn-primary">Lamda Function</a>
+              <a  href="Net.html" class="btn btn-sm ">Network Program</a>
+              <a  href="execption.html" class="btn btn-sm">Exception Handling</a>
+              <a  href="class.html" class="btn btn-sm">Class</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-5" style="margin-top: 100px;">
+        <h1 style="padding-left: 500px;">Lambda Funtion</h1>
+        <h2>Introduction</h2>
+        <p>it is an anonymus funtion, it is used to imitate the function</p>
+        <p>Ex:1 Basic Print statement</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>def fun(a): <br>
+              print(a)  <br>
+              fun(10)
+            </td>
+            <td> def fun(a): <br>
+              print(a)  <br>
+              fun(10) <br>
+              var=lambda a:a <br>
+              print(var(10))
+            </td>
+            <td>10</td>
+          </tr>
+        </table>
+        <p>Ex:2 2 argument</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>def fun(a,b): <br>
+              print(a*b)  <br>
+              fun(10,2)
+            </td>
+            <td> def fun(a): <br>
+              print(a)  <br>
+              fun(10) <br>
+              var=lambda a,b:a*b<br>
+              print(var(10,2))
+            </td>
+            <td>20</td>
+          </tr>
+        </table>
+          <p>Ex:3 square the element valus in list(Map)</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>var=[10,7,2,4,5] <br>
+              a=[] <br>
+              for x in var: <br>
+              a.append(x**2) <br>
+              print(a)
+            </td>
+            <td> var=[10,7,2,4,5] <br>
+               z=list(map(lambda x:x**2, var ))<br>
+              print(z)
+            </td>
+            <td>[100,49,4,16,25]</td>
+          </tr>
+        </table>
+        <p>Ex:4 Find Even Numbers(Filter)</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td> var=[10,7,2,3,4] <br>
+              a=[]
+            for x in var: <br>
+            if(x%2==0) <br>
+            a.append(x) <br>
+            print(a)
+            </td>
+            <td>var=[10,7,2,3,4] <br>
+              z=list(filter(lambda x:x%2==0, var))
+            print(z)
+            </td>
+            <td>[10,2,4]</td>
+          </tr>
+        </table>
+        <p>Ex:5 add with elements</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>output</td>
+          </tr>
+          <tr>
+            <td>var=[10,7,2,4,5] <br>
+              a=[] <br>
+              for x in var: <br>
+              a.append(x+2) <br>
+              print(a)
+            </td>
+            <td> var=[10,7,2,4,5] <br>
+               z=list(map(lambda x:x+2, var ))<br>
+              print(z)
+            </td>
+            <td>[12,9,4,6,7]</td>
+          </tr>
+        </table>
+        <p>Ex:6 Make Dictionary</p>
+        <table>
+          <tr>
+            <td>Traditional</td>
+            <td>Comprehension</td>
+            <td>Output</td>
+          </tr>
+          <tr>
+            <td>a=[5,10,7,2,8] <br>
+              b=0 <br>
+              for x in a: <br>
+            a=a+x<br>
+            print(b)
+            </td>
+            <td>a=[5,10,7,2,8] <br>
+              from funtiontools import reduce <br>
+              z=reduce(lambda x,y:x+y, var)
+            print(z)
+            </td>
+            <td>32</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
 
   </body>
 </html>

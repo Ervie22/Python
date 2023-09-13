@@ -5,54 +5,82 @@
     <title>Network Programming</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   </head>
-  <body background="img1.jpg">
-    <h1 style="padding-left: 500px;">Network Programming</h1>
-  <table>
-    <tr>
-      <td>Client</td>
-      <td>Server</td>
-    </tr>
-    <tr>
-      <td> import socket <br>
-        def client_program(): <br>
-        host=socket.gethostname() <br>
-        port=8000 <br>
-        client_socket=socket.socket() <br>
-        client_socket.connect((host,port)) <br>
-        message=input("Enter Your Message: ") <br>
-        while(message.lower.strip!="bye"): <br>
-        client_socket.send(message.encode()) <br>
-        data=client_socket.recv(1024).decode() <br>
-        print(data) <br>
-        message=input("Enter Your Message: ") <br>
-        client_socket.close() <br>
-        if __name__=="__main__": <br>
-        client_program()
-      </td>
-      <td>import socket <br>
-      def server_program(): <br>
-      host=socket.gethostname() <br>
-      port=8000 <br>
-      server_socket=socket.socket() <br>
-      server_socket.bind((host,port)) <br>
-      server_socket.listen(2) <br>
-       connection,address=server_socket.accept() <br>
-        while True: <br>
-         data=connection_recv(1024).decode() <br>
-         if not data: <br>
-         break <br>
-         print(data) <br>
-         message=input("Enter Your Message: ") <br>
-         connection.send(message.encode()) <br>
-         conncetion.close() <br>
-         if __name__=="__main__": <br>
-         server_program()
-    </td>
+  <body >
+    <div class="container">
+      <div class="card p-5">
+        <div class="card-header">
+          <h1 style="padding-left: 500px;">Python Tutorial</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a  href="index.html" class="btn btn-sm ">Introduction</a>
+              <a   href="datatypes.html" class="btn btn-sm ">Data Types</a>
+              <a  href="looping.html" class="btn btn-sm">Looping</a>
+              <a  href="function.html" class="btn btn-sm ">Function</a>
+              <a  href="comp.html" class="btn btn-sm">Comprehension</a>
+              <a  href="lambda.html" class="btn btn-sm">Lamda Function</a>
+              <a  href="Net.html" class="btn btn-sm btn-primary">Network Program</a>
+              <a  href="execption.html" class="btn btn-sm">Exception Handling</a>
+              <a  href="class.html" class="btn btn-sm">Class</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-5" style="margin-top: 100px;">
+        <h1 style="padding-left: 500px;">Network Programming</h1>
+      <table>
+        <tr>
+          <td>Client</td>
+          <td>Server</td>
+        </tr>
+        <tr>
+          <td> import socket <br>
+            def client_program(): <br>
+            host=socket.gethostname() <br>
+            port=8000 <br>
+            client_socket=socket.socket() <br>
+            client_socket.connect((host,port)) <br>
+            message=input("Enter Your Message: ") <br>
+            while(message.lower.strip!="bye"): <br>
+            client_socket.send(message.encode()) <br>
+            data=client_socket.recv(1024).decode() <br>
+            print(data) <br>
+            message=input("Enter Your Message: ") <br>
+            client_socket.close() <br>
+            if __name__=="__main__": <br>
+            client_program()
+          </td>
+          <td>import socket <br>
+          def server_program(): <br>
+          host=socket.gethostname() <br>
+          port=8000 <br>
+          server_socket=socket.socket() <br>
+          server_socket.bind((host,port)) <br>
+          server_socket.listen(2) <br>
+           connection,address=server_socket.accept() <br>
+            while True: <br>
+             data=connection_recv(1024).decode() <br>
+             if not data: <br>
+             break <br>
+             print(data) <br>
+             message=input("Enter Your Message: ") <br>
+             connection.send(message.encode()) <br>
+             conncetion.close() <br>
+             if __name__=="__main__": <br>
+             server_program()
+        </td>
 
-    </tr>
-  </table>
+        </tr>
+      </table>
 
+
+      </div>
+    </div>
 
   </body>
 </html>
